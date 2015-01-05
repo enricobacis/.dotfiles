@@ -154,10 +154,13 @@ bar {
 }
 
 # multimedia keys
-bindsym XF86AudioLowerVolume exec amixer -qM set Master 10%-
-bindsym XF86AudioRaiseVolume exec amixer -qM set Master 10%+
-bindsym XF86AudioMute exec $(amixer get Master | grep off > /dev/null && amixer -q set Master unmute) || amixer -q 
-set Master mute
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -qM set Master 10%-
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -qM set Master 10%+
+bindsym XF86AudioMute        exec --no-startup-id amixer -qM set Master mute
+
+# simulate multimedia keys
+bindsym $mod+Prior exec --no-startup-id xdotool key --clearmodifiers XF86AudioRaiseVolume
+bindsym $mod+Next  exec --no-startup-id xdotool key --clearmodifiers XF86AudioLowerVolume
 
 # open browser
 bindsym $mod+b exec chromium

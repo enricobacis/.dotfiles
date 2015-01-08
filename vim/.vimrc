@@ -50,6 +50,7 @@ set number
 set ignorecase
 set smartcase
 set incsearch
+set hlsearch
 
 " always show airline
 set laststatus=2

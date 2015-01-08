@@ -46,6 +46,11 @@ set number
 " highlight current line
 :set cursorline
 
+" smart incremental search
+set ignorecase
+set smartcase
+set incsearch
+
 " always show airline
 set laststatus=2
 

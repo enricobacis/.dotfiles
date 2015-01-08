@@ -168,6 +168,11 @@ bindsym $mod+b exec chromium
 # screenlock
 bindsym mod4+l exec ~/bin/screenlock
 
+# poweroff
+bindsym XF86PowerOff exec "i3-nagbar -t warning -m 'Do you really want to shutdown?' -b 'Yes' 'systemctl poweroff'"
+bindsym mod4+s exec --no-startup-id xdotool key --clearmodifiers XF86PowerOff
+
+
 # startup applications
 exec --no-startup-id clipit
 

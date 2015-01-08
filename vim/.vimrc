@@ -50,7 +50,11 @@ set number
 set ignorecase
 set smartcase
 set incsearch
+
+" highlight search
 set hlsearch
+" Clear search highlighting
+map <C-l> :nohlsearch<CR>
 
 " always show airline
 set laststatus=2

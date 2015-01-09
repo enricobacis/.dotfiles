@@ -63,6 +63,10 @@ set hlsearch
 " Clear search highlighting
 map <C-l> :nohlsearch<CR>
 
+" netrw
+let g:netrw_liststyle=3
+map <leader>k :Explore<CR>
+
 " always show airline
 set laststatus=2
 

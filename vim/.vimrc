@@ -43,8 +43,15 @@ set t_Co=256
 " show line number
 set number
 
+" It's 2014.
+noremap j gj
+noremap k gk
+
+" hidden characters
+set list listchars=tab:»\ ,trail:·
+
 " highlight current line
-:set cursorline
+set cursorline
 
 " smart incremental search
 set ignorecase

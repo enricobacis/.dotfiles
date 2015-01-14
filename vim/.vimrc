@@ -70,7 +70,6 @@ map <leader>k :Explore<CR>
 
 " always show airline
 set laststatus=2
-let g:airline_powerline_fonts = 1
 
 " Theme
 colorscheme molokai
@@ -79,6 +78,9 @@ let g:rehash256 = 1
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+" Wrap lines when using vimdiff
+autocmd FilterWritePre * if &diff | setlocal wrap< | endif
 
 " Disable arrow keys
 noremap <Up> <nop>

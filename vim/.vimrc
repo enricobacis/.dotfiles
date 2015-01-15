@@ -15,6 +15,7 @@ Plugin 'tomasr/molokai'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mhinz/vim-startify'
+Plugin 'mhinz/vim-signify'
 "Plugin 'altercation/vim-colors-solarized'
 "Plugin 'kien/ctrlp.vim'
 "Plugin 'xuhdev/SingleCompile'
@@ -70,6 +71,9 @@ map <leader>k :Explore<CR>
 
 " always show airline
 set laststatus=2
+
+" Signify
+let g:signify_vcs_list = ['git']
 
 " Theme
 colorscheme molokai

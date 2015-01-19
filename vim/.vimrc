@@ -93,6 +93,12 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
+" Custom vim-unimpaired
+nnoremap <q :cprevious<CR>
+nnoremap >q :cnext<CR>
+nnoremap <Q :cfirst<CR>
+nnoremap >Q :clast<CR>
+
 " jj for esc
 inoremap jj <Esc>
 

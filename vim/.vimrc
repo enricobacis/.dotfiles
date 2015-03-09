@@ -117,3 +117,8 @@ nmap <F8> :TagbarToggle<CR>
 set tags=./tags;/
 map <leader>q <C-]>
 
+" easy motions between splits
+map <leader>h <C-W>h
+map <leader>j <C-W>j
+map <leader>k <C-W>k
+map <leader>l <C-W>l

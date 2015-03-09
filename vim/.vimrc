@@ -12,8 +12,10 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-unimpaired'
 Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 Plugin 'tomasr/molokai'
 Plugin 'scrooloose/syntastic'
+Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mhinz/vim-startify'
 Plugin 'mhinz/vim-signify'
@@ -105,13 +107,13 @@ xmap > ]
 " jj for esc
 inoremap jj <Esc>
 
-" SingleCompile bindings
-" nmap <F9> :SCCompile<cr>
-" nmap <F10> :SCCompileRun<cr>
+" CtrlP extra bindings
+map <leader>p :CtrlPTag<CR>
 
-" Gundo binding
-" nnoremap <F5> :GundoToggle<CR>
+" Tagbar binding
+nmap <F8> :TagbarToggle<CR>
 
-" bind ctrl+p with CtrlP
-" let g:ctrlp_map = '<c-p>'
+" ctags utilities
+set tags=./tags;/
+map <leader>q <C-]>
 

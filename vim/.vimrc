@@ -18,10 +18,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mhinz/vim-startify'
 Plugin 'mhinz/vim-signify'
 Plugin 'DirDiff.vim'
-"Plugin 'altercation/vim-colors-solarized'
-"Plugin 'kien/ctrlp.vim'
-"Plugin 'xuhdev/SingleCompile'
-"Plugin 'sjl/gundo.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -69,13 +65,13 @@ map <C-l> :nohlsearch<CR>
 
 " netrw
 let g:netrw_liststyle=3
-map <leader>k :Explore<CR>
+map <leader>e :Explore<CR>
 
 " always show airline
 set laststatus=2
 
 " Signify
-let g:signify_vcs_list = ['git']
+let g:signify_vcs_list = ['git', 'svn']
 
 " Theme
 colorscheme molokai

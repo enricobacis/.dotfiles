@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'tpope/vim-unimpaired'
 Plugin 'bling/vim-airline'
 Plugin 'tomasr/molokai'
 Plugin 'scrooloose/syntastic'
@@ -87,17 +88,23 @@ cmap w!! w !sudo tee > /dev/null %
 " Wrap lines when using vimdiff
 autocmd FilterWritePre * if &diff | setlocal wrap< | endif
 
-" Disable arrow keys
-noremap <Up> <nop>
-noremap <Down> <nop>
-noremap <Left> <nop>
-noremap <Right> <nop>
+" Put arrow keys at work
+nmap <Left> <<
+nmap <Right> >>
+nmap <Up> [e
+nmap <Down> ]e
+vmap <Left> <gv
+vmap <Right> >gv
+vmap <Up> [egv
+vmap <Down> ]egv
 
 " Custom vim-unimpaired
-nnoremap <q :cprevious<CR>
-nnoremap >q :cnext<CR>
-nnoremap <Q :cfirst<CR>
-nnoremap >Q :clast<CR>
+nmap < [
+nmap > ]
+omap < [
+omap > ]
+xmap < [
+xmap > ]
 
 " jj for esc
 inoremap jj <Esc>

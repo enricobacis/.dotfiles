@@ -19,6 +19,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'mhinz/vim-startify'
 Plugin 'mhinz/vim-signify'
+Plugin 'othree/eregex.vim'
 Plugin 'DirDiff.vim'
 
 " All of your Plugins must be added before the following line
@@ -115,6 +116,10 @@ map <leader>p :CtrlPTag<CR>
 
 " Tagbar binding
 nmap <F8> :TagbarToggle<CR>
+
+" Eregex
+let g:eregex_default_enable = 0
+nnoremap <leader>/ :call eregex#toggle()<CR>
 
 " ctags utilities
 set tags=./tags;/

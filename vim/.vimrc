@@ -75,6 +75,9 @@ set laststatus=2
 " Signify
 let g:signify_vcs_list = ['git', 'svn']
 
+" Startify
+let g:startify_bookmarks = [ '~/.vimrc' ]
+
 " Theme
 colorscheme molokai
 let g:molokai_original = 1

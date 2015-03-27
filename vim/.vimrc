@@ -46,6 +46,9 @@ set t_Co=256
 " show line number
 set number
 
+" visual autocomplete for command menu
+set wildmenu
+
 " It's 2014.
 noremap j gj
 noremap k gk

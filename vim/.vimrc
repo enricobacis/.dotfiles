@@ -139,3 +139,8 @@ map <leader>h <C-W>h
 map <leader>j <C-W>j
 map <leader>k <C-W>k
 map <leader>l <C-W>l
+
+" filetypes
+set softtabstop=4 " makes the spaces feel like real tabs
+autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
+autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab

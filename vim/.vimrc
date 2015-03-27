@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'tomasr/molokai'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
@@ -75,9 +76,8 @@ set hlsearch
 " Clear search highlighting
 map <C-l> :nohlsearch<CR>
 
-" netrw
-let g:netrw_liststyle=3
-map <leader>e :Explore<CR>
+" Nerd tree
+map <leader>e :NERDTreeToggle<CR>
 
 " always show airline
 set laststatus=2

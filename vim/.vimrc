@@ -49,6 +49,9 @@ set number
 " visual autocomplete for command menu
 set wildmenu
 
+" redraw only when we need to
+set lazyredraw
+
 " It's 2014.
 noremap j gj
 noremap k gk

@@ -140,6 +140,9 @@ map <leader>j <C-W>j
 map <leader>k <C-W>k
 map <leader>l <C-W>l
 
+" toggle paste mode with F2
+set pastetoggle=<F2>
+
 " filetypes
 set softtabstop=4 " makes the spaces feel like real tabs
 autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab

@@ -52,6 +52,9 @@ set wildmenu
 " redraw only when we need to
 set lazyredraw
 
+" show command in bottom bar
+set showcmd
+
 " It's 2014.
 noremap j gj
 noremap k gk

@@ -77,7 +77,8 @@ set hlsearch
 map <C-l> :nohlsearch<CR>
 
 " Nerd tree
-map <leader>e :NERDTreeToggle<CR>
+map <F3> :NERDTreeToggle<CR>
+let NERDTreeQuitOnOpen = 1
 
 " always show airline
 set laststatus=2

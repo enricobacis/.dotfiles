@@ -146,5 +146,5 @@ set pastetoggle=<F2>
 
 " filetypes
 set softtabstop=4 " makes the spaces feel like real tabs
-autocmd FileType * set tabstop=2|set shiftwidth=2|set noexpandtab
+autocmd FileType *      set tabstop=4|set shiftwidth=4|set noexpandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab

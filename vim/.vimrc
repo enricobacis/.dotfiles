@@ -57,6 +57,9 @@ set lazyredraw
 " show command in bottom bar
 set showcmd
 
+" prevent cursor for reaching the first/last line
+set scrolloff=1
+
 " It's 2014.
 noremap j gj
 noremap k gk

@@ -114,14 +114,6 @@ vmap <Right> >gv
 vmap <Up> [egv
 vmap <Down> ]egv
 
-" Custom vim-unimpaired
-nmap < [
-nmap > ]
-omap < [
-omap > ]
-xmap < [
-xmap > ]
-
 " jj for esc
 inoremap jj <Esc>
 

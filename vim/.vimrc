@@ -144,3 +144,10 @@ set pastetoggle=<F2>
 set softtabstop=4 " makes the spaces feel like real tabs
 autocmd FileType *      set tabstop=4|set shiftwidth=4|set noexpandtab
 autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+
+" use single folder for swap files
+set directory=~/.vim/swap,.
+
+" maintain undo history between sessions
+set undofile
+set undodir=~/.vim/undo,.

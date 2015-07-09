@@ -149,5 +149,5 @@ autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 set directory=~/.vim/swap,.
 
 " maintain undo history between sessions
-set undofile
-set undodir=~/.vim/undo,.
+" set undofile
+" set undodir=~/.vim/undo,.

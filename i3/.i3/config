@@ -163,7 +163,7 @@ bindsym $mod+Prior exec --no-startup-id xdotool key --clearmodifiers XF86AudioRa
 bindsym $mod+Next  exec --no-startup-id xdotool key --clearmodifiers XF86AudioLowerVolume
 
 # open browser
-bindsym $mod+b exec chromium
+bindsym $mod+b exec firefox
 
 # screenlock
 bindsym mod4+l exec i3lock -t -i .lockscreen.png

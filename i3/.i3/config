@@ -175,3 +175,5 @@ bindsym mod4+q exec "i3-nagbar -m 'What do you want to do?' -t warning -b 'shutd
 # startup applications
 exec --no-startup-id clipit
 
+exec --no-startup-id xsetroot -solid "#111111"
+exec --no-startup-id ~/.screenlayout/layout.sh

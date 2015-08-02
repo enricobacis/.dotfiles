@@ -1,43 +1,21 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'tpope/vim-unimpaired'
-Plugin 'bling/vim-airline'
-Plugin 'kien/ctrlp.vim'
-Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tomasr/molokai'
-Plugin 'scrooloose/syntastic'
-Plugin 'majutsushi/tagbar'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'mhinz/vim-startify'
-Plugin 'mhinz/vim-signify'
-Plugin 'othree/eregex.vim'
-Plugin 'DirDiff.vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+call plug#begin()
+Plug 'tpope/vim-unimpaired'
+Plug 'bling/vim-airline'
+Plug 'kien/ctrlp.vim'
+Plug 'rking/ag.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tomasr/molokai'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'mhinz/vim-startify'
+Plug 'mhinz/vim-signify'
+Plug 'othree/eregex.vim'
+Plug 'DirDiff.vim'
+call plug#end()
 
 " Enable color formattation
 syntax enable

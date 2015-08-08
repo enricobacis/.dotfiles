@@ -13,6 +13,7 @@ Plug 'majutsushi/tagbar'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
+Plug 'thinca/vim-quickrun'
 Plug 'othree/eregex.vim'
 Plug 'DirDiff.vim'
 call plug#end()

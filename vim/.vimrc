@@ -72,6 +72,10 @@ let g:signify_vcs_list = ['git', 'svn']
 " Startify
 let g:startify_bookmarks = [ '~/.vimrc' ]
 
+" Quickrun
+let g:quickrun_config = {}
+let g:quickrun_config._ = {'outputter': 'message'}
+
 " Theme
 colorscheme molokai
 let g:molokai_original = 1

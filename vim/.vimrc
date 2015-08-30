@@ -15,6 +15,7 @@ Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'thinca/vim-quickrun'
 Plug 'alfredodeza/pytest.vim'
+Plug 'LanguageTool'
 call plug#end()
 
 " Enable color formattation
@@ -108,6 +109,9 @@ nmap <F8> :TagbarToggle<CR>
 " ctags utilities
 set tags=./tags;/
 map <leader>q <C-]>
+
+" LanguageTool
+let g:languagetool_jar='/opt/LanguageTool/languagetool-commandline.jar'
 
 " easy motions between splits
 map <leader>h <C-W>h

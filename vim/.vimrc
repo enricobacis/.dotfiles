@@ -14,6 +14,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'thinca/vim-quickrun'
+Plug 'alfredodeza/pytest.vim'
 call plug#end()
 
 " Enable color formattation

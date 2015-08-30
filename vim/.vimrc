@@ -14,8 +14,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'mhinz/vim-startify'
 Plug 'mhinz/vim-signify'
 Plug 'thinca/vim-quickrun'
-Plug 'othree/eregex.vim'
-Plug 'DirDiff.vim'
 call plug#end()
 
 " Enable color formattation
@@ -105,10 +103,6 @@ map <leader>p :CtrlPTag<CR>
 
 " Tagbar binding
 nmap <F8> :TagbarToggle<CR>
-
-" Eregex
-let g:eregex_default_enable = 0
-nnoremap <leader>/ :call eregex#toggle()<CR>
 
 " ctags utilities
 set tags=./tags;/

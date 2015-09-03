@@ -21,6 +21,9 @@ call plug#end()
 " Enable color formattation
 syntax enable
 
+" Set bash as vim shell
+set shell=/bin/bash
+
 " Enable 256 colors
 set t_Co=256
 

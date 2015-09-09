@@ -11,3 +11,5 @@
 	log = ~/.config/git/diff-highlight | less
 	show = ~/.config/git/diff-highlight | less
 	diff = ~/.config/git/diff-highlight | less
+[gitreview]
+	username = enricobacis

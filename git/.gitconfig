@@ -13,3 +13,5 @@
 	diff = ~/.config/git/diff-highlight | less
 [gitreview]
 	username = enricobacis
+[core]
+	editor = /usr/bin/vim

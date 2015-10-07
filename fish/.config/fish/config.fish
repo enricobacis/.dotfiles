@@ -4,3 +4,6 @@
 # editors
 set EDITOR /usr/bin/vim
 set VISUAL /usr/bin/vim
+
+#vagrant
+set -x VAGRANT_DEFAULT_PROVIDER virtualbox

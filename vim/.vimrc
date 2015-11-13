@@ -114,6 +114,10 @@ nmap <F8> :TagbarToggle<CR>
 " Jedi
 let g:jedi#rename_command = ""
 
+" Eregex
+nnoremap <leader>/ :call eregex#toggle()<CR>
+let g:eregex_default_enable = 0
+
 " ctags utilities
 set tags=./tags;/
 map <leader>q <C-]>

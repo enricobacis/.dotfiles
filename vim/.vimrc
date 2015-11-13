@@ -16,6 +16,7 @@ Plug 'mhinz/vim-signify'
 Plug 'thinca/vim-quickrun'
 Plug 'alfredodeza/pytest.vim'
 Plug 'davidhalter/jedi-vim'
+Plug 'othree/eregex.vim'
 Plug 'LanguageTool'
 call plug#end()
 

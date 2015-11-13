@@ -110,6 +110,9 @@ map <leader>p :CtrlPTag<CR>
 " Tagbar binding
 nmap <F8> :TagbarToggle<CR>
 
+" Jedi
+let g:jedi#rename_command = ""
+
 " ctags utilities
 set tags=./tags;/
 map <leader>q <C-]>

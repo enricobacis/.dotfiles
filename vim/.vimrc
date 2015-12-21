@@ -47,6 +47,7 @@ set scrolloff=1
 " It's 2014.
 noremap j gj
 noremap k gk
+set backspace=indent,eol,start
 
 " hidden characters
 set list listchars=tab:»\ ,trail:·

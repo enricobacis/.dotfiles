@@ -134,10 +134,12 @@ map <leader>l <C-W>l
 " toggle paste mode with F2
 set pastetoggle=<F2>
 
+" tabs
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab
+
 " filetypes
-set softtabstop=4 " makes the spaces feel like real tabs
-autocmd FileType *      set tabstop=4|set shiftwidth=4|set noexpandtab
-autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
+" autocmd FileType *      set tabstop=4|set shiftwidth=4|set noexpandtab
+" autocmd FileType python set tabstop=4|set shiftwidth=4|set expandtab
 
 " use single folder for swap files
 set directory=~/.vim/swap,.

@@ -2,23 +2,23 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 call plug#begin()
-Plug 'rking/ag.vim'
-Plug 'kien/ctrlp.vim'
-Plug 'othree/eregex.vim'
-Plug 'LanguageTool'
-Plug 'davidhalter/jedi-vim'
-Plug 'tomasr/molokai'
-Plug 'scrooloose/nerdtree'
-Plug 'alfredodeza/pytest.vim'
-Plug 'scrooloose/syntastic'
-Plug 'majutsushi/tagbar'
-Plug 'bling/vim-airline'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'thinca/vim-quickrun'
-Plug 'tpope/vim-sensible'
-Plug 'mhinz/vim-signify'
-Plug 'mhinz/vim-startify'
-Plug 'tpope/vim-unimpaired'
+Plug 'rking/ag.vim'                     " Vim plugin for the_silver_searcher
+Plug 'kien/ctrlp.vim'                   " Fuzzy file, buffer, mru, tag, finder
+Plug 'othree/eregex.vim'                " Perl style regexp notation
+Plug 'vim-scripts/LanguageTool'         " Grammar checker in vim
+Plug 'davidhalter/jedi-vim'             " Jedi autocompletion library
+Plug 'tomasr/molokai'                   " Molokai color scheme
+Plug 'scrooloose/nerdtree'              " A tree explorer plugin
+Plug 'alfredodeza/pytest.vim'           " Runs your UnitTests with py.test
+Plug 'scrooloose/syntastic'             " Syntax checking hacks
+Plug 'majutsushi/tagbar'                " Display tags in a window
+Plug 'bling/vim-airline'                " Lean & mean status/tabline
+Plug 'terryma/vim-multiple-cursors'     " Sublime Text style multiple selection
+Plug 'thinca/vim-quickrun'              " Run commands quickly
+Plug 'tpope/vim-sensible'               " Defaults everyone can agree on
+Plug 'mhinz/vim-signify'                " Show a diff via Vim sign column
+Plug 'mhinz/vim-startify'               " A fancy start screen
+Plug 'tpope/vim-unimpaired'             " Pairs of handy bracket mappings
 call plug#end()
 
 " Enable color formattation

@@ -1,5 +1,8 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible                     " be iMproved
+filetype off                         " required
+
+" install vim-plug if not already installed
+source ~/.vim/utils/plug.vim
 
 call plug#begin()
 Plug 'othree/eregex.vim',            " Perl style regexp notation

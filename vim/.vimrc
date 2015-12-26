@@ -2,22 +2,22 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 call plug#begin()
-Plug 'tpope/vim-unimpaired'
-Plug 'bling/vim-airline'
-Plug 'kien/ctrlp.vim'
 Plug 'rking/ag.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'tomasr/molokai'
-Plug 'scrooloose/syntastic'
-Plug 'majutsushi/tagbar'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'mhinz/vim-startify'
-Plug 'mhinz/vim-signify'
-Plug 'thinca/vim-quickrun'
-Plug 'alfredodeza/pytest.vim'
-Plug 'davidhalter/jedi-vim'
+Plug 'kien/ctrlp.vim'
 Plug 'othree/eregex.vim'
 Plug 'LanguageTool'
+Plug 'davidhalter/jedi-vim'
+Plug 'tomasr/molokai'
+Plug 'scrooloose/nerdtree'
+Plug 'alfredodeza/pytest.vim'
+Plug 'scrooloose/syntastic'
+Plug 'majutsushi/tagbar'
+Plug 'bling/vim-airline'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'thinca/vim-quickrun'
+Plug 'mhinz/vim-signify'
+Plug 'mhinz/vim-startify'
+Plug 'tpope/vim-unimpaired'
 call plug#end()
 
 " Enable color formattation

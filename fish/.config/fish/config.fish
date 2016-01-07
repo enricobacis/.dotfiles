@@ -10,3 +10,10 @@ set -gx TERMINAL sakura
 
 #vagrant
 set -x VAGRANT_DEFAULT_PROVIDER virtualbox
+
+# start X at login
+if status --is-login
+    if test -z "$DISPLAY" -a $XDG_VTNR -eq 1
+        exec startx -- -keeptty
+    end
+end

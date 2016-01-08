@@ -166,7 +166,7 @@ bindsym $mod+Next  exec --no-startup-id xdotool key --clearmodifiers XF86AudioLo
 bindsym $mod+b exec firefox
 
 # screenlock
-bindsym mod4+l exec i3lock -t -i .lockscreen.png
+bindsym mod4+l exec ~/.utils/i3lock.sh
 
 # quit menu
 bindsym XF86PowerOff exec --no-startup-id xdotool key --clearmodifiers super+q

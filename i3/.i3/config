@@ -162,6 +162,14 @@ bindsym XF86AudioMute        exec --no-startup-id amixer -qM set Master mute
 bindsym $mod+Prior exec --no-startup-id xdotool key --clearmodifiers XF86AudioRaiseVolume
 bindsym $mod+Next  exec --no-startup-id xdotool key --clearmodifiers XF86AudioLowerVolume
 
+# brightness keys
+bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10
+bindsym XF86MonBrightnessUp   exec --no-startup-id xbacklight +10
+
+# simulate brightness keys
+bindsym $mod+Home exec --no-startup-id xdotool key --clearmodifiers XF86MonBrightnessDown
+bindsym $mod+End  exec --no-startup-id xdotool key --clearmodifiers XF86MonBrightnessUp
+
 # open browser
 bindsym $mod+b exec firefox
 

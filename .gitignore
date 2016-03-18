@@ -2,3 +2,9 @@
 /vim/.vim/autoload
 /vim/.vim/plugged
 /vim/.vim/.netrwhist
+
+# fish
+/fish/.config/fish/fishd.*
+/fish/.config/fish/config.fish
+/fish/.config/fish/fish_history
+/fish/.config/fish/config.*.copy

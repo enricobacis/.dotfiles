@@ -8,6 +8,7 @@ call plug#begin()
 Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'scrooloose/syntastic'          " Syntax checking hacks
+Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'bling/vim-airline'             " Lean & mean status/tabline
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'thinca/vim-quickrun'           " Run commands quickly
@@ -22,7 +23,6 @@ Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar c
 Plug 'davidhalter/jedi-vim',         { 'for': 'python' }             " Jedi autocompletion library
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
-Plug 'majutsushi/tagbar',            { 'on':  'TagbarToggle' }       " Display tags in a window
 call plug#end()
 
 " Enable color formattation

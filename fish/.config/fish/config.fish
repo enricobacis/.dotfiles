@@ -25,7 +25,7 @@ end
 # fundle
 if [ -s ~/.config/fish/functions/fundle.fish ]
     fundle plugin 'oh-my-fish/theme-bobthefish'
-    fundle plugin 'enricobacis/pkg-fishtory'
+    fundle plugin 'oh-my-fish/plugin-bang-bang'
     fundle init
 else
     echo "[Downloading fundle ...]"

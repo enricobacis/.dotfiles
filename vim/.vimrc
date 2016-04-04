@@ -18,6 +18,7 @@ Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
 Plug 'rking/ag.vim',                 { 'on':  'Ag' }                 " Vim plugin for the_silver_searcher
 Plug 'kien/ctrlp.vim',               { 'on':  'CtrlPTag' }           " Fuzzy file, buffer, mru, tag, finder
+Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
 Plug 'davidhalter/jedi-vim',         { 'for': 'python' }             " Jedi autocompletion library
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
@@ -72,6 +73,10 @@ map <C-l> :nohlsearch<CR>
 " Nerd tree
 map <F3> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
+
+" Gundo
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_close_on_revert = 1
 
 " always show airline
 set laststatus=2

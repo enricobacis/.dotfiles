@@ -13,3 +13,7 @@
 /fish/.config/fish/fishd.*
 # fish history
 /fish/.config/fish/fish_history
+# fundle functions
+/fish/.config/fish/functions/fundle.fish
+# fundle repositories
+/fish/.config/fish/fundle

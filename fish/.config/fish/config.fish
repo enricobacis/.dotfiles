@@ -22,7 +22,8 @@ if status --is-login
     end
 end
 
-# fisherman
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
+# fundle
+if test -s ~/.config/fish/functions/fundle.fish
+    fundle plugin 'oh-my-fish/theme-bobthefish'
+    fundle init
+end

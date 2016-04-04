@@ -9,5 +9,7 @@
 
 ## fish
 
+# universal variable daemon
+/fish/.config/fish/fishd.*
 # fish history
 /fish/.config/fish/fish_history

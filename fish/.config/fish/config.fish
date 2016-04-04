@@ -21,3 +21,8 @@ if status --is-login
         exec startx -- -keeptty
     end
 end
+
+# fisherman
+set fisher_home ~/.local/share/fisherman
+set fisher_config ~/.config/fisherman
+source $fisher_home/config.fish

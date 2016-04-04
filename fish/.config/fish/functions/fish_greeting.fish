@@ -1,10 +1,10 @@
 function fish_greeting
-    if not test -d ~/.local/share/omf
-        install_omf
+    if not test -d ~/.local/share/fisherman
+        install_fisherman
     end
 end
 
-function install_omf
-    echo "[Downloading Oh-My-Fish ...]"
-    curl -# -L https://github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish
+function install_fisherman
+    echo "[Downloading fisherman ...]"
+    curl -# -L get.fisherman.sh | fish
 end

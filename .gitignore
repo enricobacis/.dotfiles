@@ -9,13 +9,5 @@
 
 ## fish
 
-# universal variable daemon
-/fish/.config/fish/fishd.*
-# use omf/init.fish instead of fish/config.fish
-/fish/.config/fish/config.fish
 # fish history
 /fish/.config/fish/fish_history
-# oh-my-fish config backup
-/fish/.config/fish/config.*.copy
-# the prompt is managed by oh-my-fish
-/fish/.config/fish/functions/fish_prompt.fish

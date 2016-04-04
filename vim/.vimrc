@@ -156,5 +156,5 @@ set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab
 set directory=~/.vim/swap,.
 
 " maintain undo history between sessions
-" set undofile
-" set undodir=~/.vim/undo,.
+set undofile
+set undodir=~/.vim/undo,.

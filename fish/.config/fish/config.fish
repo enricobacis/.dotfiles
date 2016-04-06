@@ -23,13 +23,8 @@ if status --is-login
 end
 
 # fundle
-if [ -s ~/.config/fish/functions/fundle.fish ]
-    fundle plugin 'oh-my-fish/theme-bobthefish'
-    fundle plugin 'oh-my-fish/plugin-bang-bang'
-    fundle init
-else
-    echo "[Downloading fundle ...]"
-    mkdir -p ~/.config/fish/functions
-    curl -#fL https://raw.githubusercontent.com/tuvistavie/fundle/master/functions/fundle.fish \
-         > ~/.config/fish/functions/fundle.fish; and echo "fundle install" | fish; and exec fish
-end
+if not functions -q fundle; eval (curl -sfL https://git.io/fundle.install); end
+fundle plugin 'tuvistavie/fish-fastdir'
+fundle plugin 'oh-my-fish/theme-bobthefish'
+fundle plugin 'oh-my-fish/plugin-bang-bang'
+fundle init

@@ -32,3 +32,4 @@ fundle init
 # bobthefish
 set -g theme_display_user yes
 set -g default_user enrico
+set -g theme_show_exit_status yes

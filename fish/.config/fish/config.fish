@@ -28,3 +28,7 @@ fundle plugin 'tuvistavie/fish-fastdir'
 fundle plugin 'oh-my-fish/theme-bobthefish'
 fundle plugin 'oh-my-fish/plugin-bang-bang'
 fundle init
+
+# bobthefish
+set -g theme_display_user yes
+set -g default_user enrico

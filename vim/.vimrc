@@ -96,6 +96,9 @@ let g:startify_bookmarks = [ '~/.vimrc' ]
 let g:quickrun_config = {}
 let g:quickrun_config._ = {'outputter': 'message'}
 
+" Pytest
+nmap <leader>t :Pytest file<CR>
+
 " Theme
 silent! colorscheme molokai
 let g:molokai_original = 1

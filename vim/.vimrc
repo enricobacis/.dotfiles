@@ -70,6 +70,9 @@ set hlsearch
 " Clear search highlighting
 map <C-l> :nohlsearch<CR>
 
+" make Q like q (exit)
+command Q q
+
 " Nerd tree
 map <F3> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1

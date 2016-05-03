@@ -156,7 +156,7 @@ bar {
 # multimedia keys
 bindsym XF86AudioLowerVolume exec --no-startup-id amixer -qM set Master 10%- unmute
 bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -qM set Master 10%+ unmute
-bindsym XF86AudioMute        exec --no-startup-id amixer -qM set Master mute
+bindsym XF86AudioMute        exec --no-startup-id amixer -qM set Master toggle
 
 # simulate multimedia keys
 bindsym $mod+Prior exec --no-startup-id xdotool key --clearmodifiers XF86AudioRaiseVolume

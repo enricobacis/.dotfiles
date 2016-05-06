@@ -159,16 +159,20 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -qM set Master 10%+ unm
 bindsym XF86AudioMute        exec --no-startup-id amixer -qM set Master toggle
 
 # simulate multimedia keys
-bindsym $mod+Prior exec --no-startup-id xdotool key --clearmodifiers XF86AudioRaiseVolume
-bindsym $mod+Next  exec --no-startup-id xdotool key --clearmodifiers XF86AudioLowerVolume
+bindsym $mod+Prior         exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86AudioRaiseVolume
+bindsym $mod+Next          exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86AudioLowerVolume
+bindsym $mod+Control+Left  exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86AudioPrev
+bindsym $mod+Control+Up    exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86AudioPlay
+bindsym $mod+Control+Right exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86AudioNext
+bindsym $mod+Control+Down  exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86AudioStop
 
 # brightness keys
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -10
 bindsym XF86MonBrightnessUp   exec --no-startup-id xbacklight +10
 
 # simulate brightness keys
-bindsym $mod+Home exec --no-startup-id xdotool key --clearmodifiers XF86MonBrightnessDown
-bindsym $mod+End  exec --no-startup-id xdotool key --clearmodifiers XF86MonBrightnessUp
+bindsym $mod+Home exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86MonBrightnessDown
+bindsym $mod+End  exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86MonBrightnessUp
 
 # open browser
 bindsym $mod+b exec firefox

@@ -15,10 +15,6 @@ set -x VAGRANT_DEFAULT_PROVIDER virtualbox
 set -gx LC_ALL "en_US.UTF-8"
 set -gx LANG "en_US.UTF-8"
 
-# go
-set -x GOPATH "$HOME/hack/go"
-set -x $PATH "$PATH:$HOME/hack/go/bin"
-
 # start X at login
 if status --is-login
     if test -z "$DISPLAY" -a $XDG_VTNR -eq 1

@@ -13,7 +13,7 @@ set -gx LC_ALL "en_US.UTF-8"
 set -gx LANG "en_US.UTF-8"
 
 # start X at login
-if status --is-login
+if begin status --is-login; and uname | grep -i 'linux'; end
     if test -z "$DISPLAY" -a $XDG_VTNR -eq 1
         exec startx -- -keeptty
     end

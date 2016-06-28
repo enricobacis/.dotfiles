@@ -31,3 +31,9 @@ fundle init
 set -g theme_display_user yes
 set -g default_user enrico
 set -g theme_show_exit_status yes
+
+# for local changes
+if test -e ~/.config/fish/local.fish
+    echo 'ciao'
+    source ~/.config/fish/local.fish
+end

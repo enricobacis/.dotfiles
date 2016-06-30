@@ -34,6 +34,5 @@ set -g theme_show_exit_status yes
 
 # for local changes
 if test -e ~/.config/fish/local.fish
-    echo 'ciao'
     source ~/.config/fish/local.fish
 end

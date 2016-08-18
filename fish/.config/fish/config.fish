@@ -14,7 +14,7 @@ set -gx LANG "en_US.UTF-8"
 
 # start X at login
 if begin status --is-login; and uname | grep -qi 'linux'; end
-    if test -z "$DISPLAY" -a $XDG_VTNR -eq 1
+    if test -z "$DISPLAY" -a "$XDG_VTNR" -eq "1"
         exec startx -- -keeptty
     end
 end

@@ -73,7 +73,7 @@ set hlsearch
 map <C-l> :nohlsearch<CR>
 
 " make Q like q (exit)
-command Q q
+command! Q q
 
 " Nerd tree
 map <F3> :NERDTreeToggle<CR>

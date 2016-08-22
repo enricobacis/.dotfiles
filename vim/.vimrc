@@ -24,7 +24,7 @@ Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar c
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
-Plug 'Valloric/YouCompleteMe',       { 'on': [], 'do': './install.py --clang-completer' } " Code completion
+Plug 'Valloric/YouCompleteMe',       { 'on':  'YcmCompleter', 'do': './install.py --clang-completer' }
 call plug#end()
 
 " Enable plugins only when entering insert mode

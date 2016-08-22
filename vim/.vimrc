@@ -24,8 +24,15 @@ Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar c
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
-Plug 'Valloric/YouCompleteMe',       { 'do': './install.py --clang-completer' } " Code completion engine
+Plug 'Valloric/YouCompleteMe',       { 'on': [], 'do': './install.py --clang-completer' } " Code completion
 call plug#end()
+
+" Enable plugins only when entering insert mode
+augroup load_on_insert
+  autocmd!
+  autocmd InsertEnter * call plug#load('YouCompleteMe')
+                     \| autocmd! load_on_insert
+augroup END
 
 " Enable color formattation
 syntax enable

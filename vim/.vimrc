@@ -86,6 +86,9 @@ let g:gundo_close_on_revert = 1
 set laststatus=2
 let g:airline#extensions#whitespace#show_message = 0
 
+" Fugitive
+autocmd User Fugitive SignifyRefresh
+
 " Signify
 let g:signify_vcs_list = ['git', 'svn']
 

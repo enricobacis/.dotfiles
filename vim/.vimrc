@@ -21,9 +21,10 @@ Plug 'rking/ag.vim',                 { 'on':  'Ag' }                 " Vim plugi
 Plug 'kien/ctrlp.vim',               { 'on':  'CtrlPTag' }           " Fuzzy file, buffer, mru, tag, finder
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
-Plug 'davidhalter/jedi-vim',         { 'for': 'python' }             " Jedi autocompletion library
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
+Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
+Plug 'Valloric/YouCompleteMe',       { 'do': './install.py --clang-completer' } " Code completion engine
 call plug#end()
 
 " Enable color formattation
@@ -147,6 +148,9 @@ let g:eregex_default_enable = 0
 " ctags utilities
 set tags=./tags;/
 map <leader>q <C-]>
+
+" YouCompleteMe
+let g:ycm_confirm_extra_conf = 0
 
 " LanguageTool
 let g:languagetool_jar='/opt/LanguageTool/languagetool-commandline.jar'

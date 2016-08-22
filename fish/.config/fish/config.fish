@@ -32,6 +32,11 @@ set -g theme_display_user yes
 set -g default_user enrico
 set -g theme_show_exit_status yes
 
+# virtualfish
+if pip show -q virtualfish
+    eval (python -m virtualfish)
+end
+
 # for local changes
 if test -e ~/.config/fish/local.fish
     source ~/.config/fish/local.fish

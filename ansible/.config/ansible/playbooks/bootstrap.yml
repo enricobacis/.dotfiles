@@ -1,0 +1,27 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: Install common packages
+      package: name={{item}} state=latest
+      with_items:
+        - fish
+        - git
+        - stow
+        - tmux
+        - vim
+
+    - name: Install Archlinux-specific packages
+      package: name={{item}} state=latest
+      when: ansible_distribution == 'Archlinux'
+      with_items:
+        - dmenu
+        - dunst
+        - pkgfile
+        - the_silver_searcher
+
+    - name: Install MacOSX-specific packages
+      package: name={{item}} state=latest
+      when: ansible_distribution == 'MacOSX'
+      with_items:
+        - the_silver_searcher

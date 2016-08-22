@@ -6,7 +6,7 @@ set -gx VISUAL /usr/bin/vim
 set -gx TERMINAL sakura
 
 # vagrant
-set -x VAGRANT_DEFAULT_PROVIDER virtualbox
+set -gx VAGRANT_DEFAULT_PROVIDER virtualbox
 
 # languages
 set -gx LC_ALL "en_US.UTF-8"

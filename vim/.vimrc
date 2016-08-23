@@ -23,6 +23,7 @@ Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph you
 Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
+Plug 'ternjs/tern_for_vim',          { 'for': 'javascript', 'do': 'npm install' } " JS completions
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
 Plug 'Valloric/YouCompleteMe',       { 'on':  'YcmCompleter', 'do': './install.py --clang-completer' }
 call plug#end()
@@ -30,7 +31,7 @@ call plug#end()
 " Enable plugins only when entering insert mode
 augroup load_on_insert
   autocmd!
-  autocmd InsertEnter * if count(['c','cpp','python'],&ft)
+  autocmd InsertEnter * if count(['c','cpp','javascript','python'],&ft)
                      \| echo '[Loading deferred plug-ins]'
                      \| call plug#load('YouCompleteMe')
                      \| autocmd! load_on_insert

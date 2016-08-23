@@ -40,6 +40,10 @@ set t_Co=256
 " show line number
 set number
 
+" define where to open splits
+set splitbelow
+set splitright
+
 " visual autocomplete for command menu
 set wildmenu
 

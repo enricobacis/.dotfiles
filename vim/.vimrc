@@ -81,7 +81,7 @@ map <C-l> :nohlsearch<CR>
 command! Q q
 
 " Nerd tree
-map <F3> :NERDTreeToggle<CR>
+map <F4> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
 
 " Gundo

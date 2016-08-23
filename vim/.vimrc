@@ -56,7 +56,7 @@ set showcmd
 " prevent cursor for reaching the first/last line
 set scrolloff=1
 
-" It's 2014.
+" It's 21st century.
 noremap j gj
 noremap k gk
 set backspace=indent,eol,start

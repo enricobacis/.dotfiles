@@ -25,7 +25,7 @@ Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree ex
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
 Plug 'ternjs/tern_for_vim',          { 'for': 'javascript', 'do': 'npm install' } " JS completions
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
-Plug 'Valloric/YouCompleteMe',       { 'on':  'YcmCompleter', 'do': './install.py --clang-completer' }
+Plug 'Valloric/YouCompleteMe',       { 'on':  'YcmCompleter', 'do': './install.py --clang-completer', 'frozen': 1 }
 call plug#end()
 
 " Enable plugins only when entering insert mode

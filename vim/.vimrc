@@ -155,7 +155,8 @@ map <leader>q <C-]>
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
-nnoremap <leader>f :YcmCompleter GoTo<CR>
+nnoremap <leader>f :YcmCompleter FixIt<CR>
+nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 " LanguageTool
 let g:languagetool_jar='/opt/LanguageTool/languagetool-commandline.jar'

@@ -30,7 +30,8 @@ call plug#end()
 " Enable plugins only when entering insert mode
 augroup load_on_insert
   autocmd!
-  autocmd InsertEnter * echo '[Loading deferred plug-ins]'
+  autocmd InsertEnter * if count(['c','cpp','python'],&ft)
+                     \| echo '[Loading deferred plug-ins]'
                      \| call plug#load('YouCompleteMe')
                      \| autocmd! load_on_insert
 augroup END

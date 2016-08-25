@@ -32,8 +32,10 @@ set -g theme_display_user yes
 set -g default_user enrico
 set -g theme_show_exit_status yes
 
-# virtualfish
-eval (python -m virtualfish 2>/dev/null)
+# pew - python env wrapper
+if type -q pew
+    source (pew shell_config)
+end
 
 # for local changes
 if test -e ~/.config/fish/local.fish

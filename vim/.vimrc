@@ -83,7 +83,10 @@ command! Q q
 " Nerd tree
 map <F4> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
-let NERDTreeIgnore = ['\.pyc$', '\.(png|pdf|eps)$']
+let NERDTreeIgnore =['\~$', '.DS_Store$']              " Temporary files
+let NERDTreeIgnore+=['\.png$', '\.pdf$', '\.eps$']     " Image files
+let NERDTreeIgnore+=['\.pyc$', '__pycache__$']         " Python compiled files
+let NERDTreeIgnore+=['\.o$', '\.so$', '\.a$']          " C compiled files
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>

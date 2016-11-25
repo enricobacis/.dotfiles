@@ -95,6 +95,7 @@ let g:gundo_close_on_revert = 1
 " always show airline
 set laststatus=2
 let g:airline#extensions#whitespace#show_message = 0
+let g:airline_powerline_fonts=1
 
 " Fugitive
 autocmd User Fugitive SignifyRefresh

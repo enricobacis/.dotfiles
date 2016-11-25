@@ -83,6 +83,7 @@ command! Q q
 " Nerd tree
 map <F4> :NERDTreeToggle<CR>
 let NERDTreeQuitOnOpen = 1
+let NERDTreeIgnore = ['\.pyc$', '\.(png|pdf|eps)$']
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>

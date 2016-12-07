@@ -104,7 +104,6 @@ autocmd User Fugitive SignifyRefresh
 let g:signify_vcs_list = ['git', 'svn']
 
 " Startify
-let g:startify_mapping_nowait = 0
 let g:startify_custom_header = []
 let g:startify_bookmarks = [ '~/.vimrc' ]
 

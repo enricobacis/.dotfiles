@@ -10,6 +10,7 @@ Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'scrooloose/syntastic'          " Syntax checking hacks
 Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'bling/vim-airline'             " Lean & mean status/tabline
+Plug 'enricobacis/vim-airline-clock' " vim-airline clock extension
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'thinca/vim-quickrun'           " Run commands quickly

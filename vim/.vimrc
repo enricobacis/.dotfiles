@@ -9,6 +9,7 @@ Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'scrooloose/syntastic'          " Syntax checking hacks
 Plug 'majutsushi/tagbar'             " Display tags in a window
+Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'bling/vim-airline'             " Lean & mean status/tabline
 Plug 'enricobacis/vim-airline-clock' " vim-airline clock extension
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
@@ -16,6 +17,7 @@ Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'thinca/vim-quickrun'           " Run commands quickly
 Plug 'tpope/vim-sensible'            " Defaults everyone can agree on
 Plug 'mhinz/vim-signify'             " Show a diff via Vim sign column
+Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
 Plug 'rking/ag.vim',                 { 'on':  'Ag' }                 " Vim plugin for the_silver_searcher
@@ -164,6 +166,11 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
 nnoremap <leader>f :YcmCompleter FixIt<CR>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+
+" UltiSnip
+let g:UltiSnipsExpandTrigger = "<C-j>"
+let g:UltiSnipsJumpForwardTrigger = "<C-j>"
+let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 
 " LanguageTool
 let g:languagetool_jar='/opt/LanguageTool/languagetool-commandline.jar'

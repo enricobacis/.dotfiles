@@ -1,6 +1,6 @@
 # editors
-set -gx EDITOR /usr/bin/vim
-set -gx VISUAL /usr/bin/vim
+set -gx EDITOR vim
+set -gx VISUAL vim
 
 # terminal
 set -gx TERMINAL sakura

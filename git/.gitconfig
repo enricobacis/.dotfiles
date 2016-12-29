@@ -16,4 +16,4 @@
 [gitreview]
 	username = enricobacis
 [core]
-	editor = /usr/bin/vim
+	editor = vim

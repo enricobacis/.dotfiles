@@ -29,8 +29,12 @@ fundle init
 
 # bobthefish
 set -g theme_display_user yes
-set -g default_user enrico
 set -g theme_show_exit_status yes
+
+# bobthefish specific for the system (PEOPLE MAY WANT TO CHANGE THIS)
+set -g default_user enrico
+set -g theme_powerline_fonts yes
+set -g theme_nerd_fonts yes
 
 # pew - python env wrapper
 if type -q pew

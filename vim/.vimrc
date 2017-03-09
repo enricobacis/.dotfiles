@@ -99,6 +99,11 @@ let g:gundo_close_on_revert = 1
 set laststatus=2
 let g:airline#extensions#whitespace#show_message = 0
 let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#tab_min_count = 2
+let g:airline#extensions#tabline#show_splits = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Fugitive
 autocmd User Fugitive SignifyRefresh

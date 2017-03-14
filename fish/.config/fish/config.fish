@@ -1,6 +1,7 @@
 # editors
-set -gx EDITOR vim
-set -gx VISUAL vim
+set -gx EDITOR (type -q vim; and echo vim; or echo vi)
+set -gx VISUAL $EDITOR
+alias vi $EDITOR
 
 # terminal
 set -gx TERMINAL sakura

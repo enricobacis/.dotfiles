@@ -19,3 +19,6 @@
 	s = status -s
 	st = status
 
+# correct typos
+[help]
+	autocorrect = 1

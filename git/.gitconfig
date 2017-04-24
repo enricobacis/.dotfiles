@@ -9,11 +9,8 @@
 	tree = !"git tree1"
 	s = status -s
 	st = status
-[pager]
-	log = ~/.config/git/diff-highlight | less
-	show = ~/.config/git/diff-highlight | less
-	diff = ~/.config/git/diff-highlight | less
 [gitreview]
 	username = enricobacis
 [core]
 	editor = vim
+	pager = ~/.config/git/diff-so-fancy | less --tabs=4 -RFX

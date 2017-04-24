@@ -40,6 +40,13 @@ if type -q pew
     source (pew shell_config)
 end
 
+# thefuck
+if type -q thefuck
+    eval (thefuck --alias | tr '\n' ';')
+else
+    function fuck; pip install --user thefuck; and exec fish; end
+end
+
 # for local changes
 if test -e ~/.config/fish/local.fish
     source ~/.config/fish/local.fish

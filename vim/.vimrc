@@ -102,6 +102,7 @@ let g:gundo_close_on_revert = 1
 " Statusline and Tabline
 set laststatus=2
 set showtabline=2
+set noshowmode
 
 " Fugitive
 autocmd User Fugitive SignifyRefresh

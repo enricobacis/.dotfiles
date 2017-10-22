@@ -154,8 +154,8 @@ nmap <Up> [e
 nmap <Down> ]e
 vmap <Left> <gv
 vmap <Right> >gv
-vmap <Up> [egv
-vmap <Down> ]egv
+vmap <Up> [egv=gv
+vmap <Down> ]egv=gv
 
 " Resize
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>

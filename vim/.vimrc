@@ -6,12 +6,11 @@ source ~/.vim/utils/plug.vim
 
 call plug#begin()
 Plug 'othree/eregex.vim',            " Perl style regexp notation
+Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'scrooloose/syntastic'          " Syntax checking hacks
 Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
-Plug 'bling/vim-airline'             " Lean & mean status/tabline
-Plug 'enricobacis/vim-airline-clock' " vim-airline clock extension
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'thinca/vim-quickrun'           " Run commands quickly
@@ -96,14 +95,9 @@ let NERDTreeIgnore+=['\.o$', '\.so$', '\.a$']          " C compiled files
 nnoremap <F5> :GundoToggle<CR>
 let g:gundo_close_on_revert = 1
 
-" always show airline
+" Statusline and Tabline
 set laststatus=2
-let g:airline#extensions#whitespace#show_message = 0
-let g:airline_powerline_fonts=1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#tabline#tab_min_count = 2
-let g:airline#extensions#tabline#show_splits = 1
+set showtabline=2
 
 " Fugitive
 autocmd User Fugitive SignifyRefresh

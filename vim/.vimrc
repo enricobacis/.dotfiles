@@ -199,10 +199,14 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 let g:languagetool_jar='/opt/LanguageTool/languagetool-commandline.jar'
 
 " easy motions between splits
-map <leader>h <C-W>h
-map <leader>j <C-W>j
-map <leader>k <C-W>k
-map <leader>l <C-W>l
+map <leader>h <C-W>h                                               " Move Left:        <leader>h
+map <leader>j <C-W>j                                               " Move Down:        <leader>j
+map <leader>k <C-W>k                                               " Move Up:          <leader>k
+map <leader>l <C-W>l                                               " Move Right:       <leader>l
+nnoremap <expr><silent> \| !v:count ? "<C-W>v<C-W><Right>" : '\|'  " Vertical Split:   |
+nnoremap <expr><silent> _ !v:count ? "<C-W>s<C-W><Down>"  : '_'    " Horizontal Split: _
+nnoremap <Tab> <C-W>w                                              " Next Split:       <Tab>
+nnoremap <S-Tab> <C-W>W                                            " Previous Split:   <S-Tab>
 
 " toggle paste mode with F2
 set pastetoggle=<F2>

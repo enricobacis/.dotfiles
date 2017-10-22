@@ -5,6 +5,7 @@ filetype off                         " required
 source ~/.vim/utils/plug.vim
 
 call plug#begin()
+Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
@@ -87,6 +88,10 @@ map <C-l> :nohlsearch<CR>
 
 " make Q like q (exit)
 command! Q q
+
+" Vim Commentary
+vmap <leader>c gc
+nmap <leader>c gcc
 
 " Nerd tree
 map <F4> :NERDTreeToggle<CR>

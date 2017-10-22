@@ -18,7 +18,7 @@ Plug 'mhinz/vim-signify'             " Show a diff via Vim sign column
 Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
-Plug 'rking/ag.vim',                 { 'on':  'Ag' }                 " Vim plugin for the_silver_searcher
+Plug 'mileszs/ack.vim',              { 'on':  'Ack' }                " Vim plugin for ack/ag
 Plug 'kien/ctrlp.vim',               { 'on':  'CtrlPTag' }           " Fuzzy file, buffer, mru, tag, finder
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
@@ -117,6 +117,12 @@ let g:startify_bookmarks = [ '~/.vimrc' ]
 " Quickrun
 let g:quickrun_config = {}
 let g:quickrun_config._ = {'outputter': 'message'}
+
+" Ack
+nnoremap <leader>a :Ack<space>
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
 
 " Pytest
 nmap <leader>t :Pytest file<CR>

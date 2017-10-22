@@ -9,6 +9,7 @@ if type -q fzf
   else if type -q ag; set -gx FZF_DEFAULT_COMMAND 'ag --nocolor -g ""'
   end
 end
+set FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 
 # terminal
 set -gx TERMINAL sakura

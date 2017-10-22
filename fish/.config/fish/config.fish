@@ -43,18 +43,6 @@ set -g default_user enrico
 set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
 
-# pew - python env wrapper
-# if type -q pew
-#     source (pew shell_config)
-# end
-
-# thefuck
-# if type -q thefuck
-#     eval (thefuck --alias | tr '\n' ';')
-# else
-#     function fuck; pip install --user thefuck; and exec fish; end
-# end
-
 # rust
 if test -d $HOME/.cargo/bin
   set -gx PATH $PATH $HOME/.cargo/bin

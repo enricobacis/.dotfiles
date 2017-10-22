@@ -44,16 +44,16 @@ set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
 
 # pew - python env wrapper
-if type -q pew
-    source (pew shell_config)
-end
+# if type -q pew
+#     source (pew shell_config)
+# end
 
 # thefuck
-if type -q thefuck
-    eval (thefuck --alias | tr '\n' ';')
-else
-    function fuck; pip install --user thefuck; and exec fish; end
-end
+# if type -q thefuck
+#     eval (thefuck --alias | tr '\n' ';')
+# else
+#     function fuck; pip install --user thefuck; and exec fish; end
+# end
 
 # for local changes
 if test -e ~/.config/fish/local.fish

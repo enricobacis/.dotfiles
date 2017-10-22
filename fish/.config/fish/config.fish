@@ -3,6 +3,13 @@ set -gx EDITOR (type -q vim; and echo vim; or echo vi)
 set -gx VISUAL $EDITOR
 alias vi $EDITOR
 
+# fzf
+if type -q fzf
+  if type -q rg; set -gx FZF_DEFAULT_COMMAND 'rg --files'
+  else if type -q ag; set -gx FZF_DEFAULT_COMMAND 'ag --nocolor -g ""'
+  end
+end
+
 # terminal
 set -gx TERMINAL sakura
 

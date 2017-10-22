@@ -8,7 +8,6 @@ call plug#begin()
 Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
-Plug 'scrooloose/syntastic'          " Syntax checking hacks
 Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
@@ -29,6 +28,8 @@ Plug 'ternjs/tern_for_vim',          { 'for': 'javascript', 'do': 'npm install',
 Plug 'nvie/vim-flake8',              { 'on': 'Flake8' }              " Flake8 plugin for Vim
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
 Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
+" Syntax highlighting
+Plug (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
 call plug#end()
 
 " Enable color formattation

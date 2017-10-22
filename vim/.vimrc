@@ -85,6 +85,9 @@ set incsearch
 set hlsearch
 " Clear search highlighting
 map <C-l> :nohlsearch<CR>
+" Keep search matches in the middle of the screen
+nnoremap n nzz
+nnoremap N Nzz
 
 " make Q like q (exit)
 command! Q q

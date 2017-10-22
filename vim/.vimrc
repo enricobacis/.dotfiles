@@ -19,7 +19,8 @@ Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
 Plug 'mileszs/ack.vim',              { 'on':  'Ack' }                " Vim plugin for ack/ag
-Plug 'kien/ctrlp.vim',               { 'on':  'CtrlPTag' }           " Fuzzy file, buffer, mru, tag, finder
+Plug 'junegunn/fzf',                 { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim',             { 'on':  'FZF' }                " fzf ❤️ vim
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
@@ -155,8 +156,9 @@ nnoremap <silent> <Leader>- :exe "resize " . (winheight(0) * 2/3)<CR>
 " jj for esc
 inoremap jj <Esc>
 
-" CtrlP extra bindings
-map <leader>p :CtrlPTag<CR>
+" Fzf (CtrlP alternative)
+map <leader>p :FZF<CR>
+
 
 " Tagbar binding
 nmap <F8> :TagbarToggle<CR>

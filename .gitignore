@@ -15,6 +15,8 @@
 /fish/.config/fish/fish_history
 # fundle functions
 /fish/.config/fish/functions/fundle.fish
+# fzf key bindings
+/fish/.config/fish/functions/fzf_key_bindings.fish
 # fundle repositories
 /fish/.config/fish/fundle
 # fish local settings

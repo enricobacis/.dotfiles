@@ -55,6 +55,11 @@ set -g theme_nerd_fonts yes
 #     function fuck; pip install --user thefuck; and exec fish; end
 # end
 
+# rust
+if test -d $HOME/.cargo/bin
+  set -gx PATH $PATH $HOME/.cargo/bin
+end
+
 # for local changes
 if test -e ~/.config/fish/local.fish
     source ~/.config/fish/local.fish

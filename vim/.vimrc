@@ -59,6 +59,9 @@ set showcmd
 " prevent cursor for reaching the first/last line
 set scrolloff=1
 
+let mapleader = "\<Space>"
+nnoremap <SPACE> <Nop>
+
 " It's 21st century.
 noremap j gj
 noremap k gk

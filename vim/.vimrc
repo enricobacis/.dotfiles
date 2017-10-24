@@ -172,6 +172,10 @@ autocmd VimResized * :wincmd =
 " jj for esc
 inoremap jj <Esc>
 
+" Improve paste
+nnoremap p p`[v`]=
+nnoremap P P`[v`]=
+
 " Fzf (CtrlP alternative)
 map <leader>p :FZF<CR>
 

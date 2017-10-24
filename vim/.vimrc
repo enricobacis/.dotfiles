@@ -26,6 +26,7 @@ Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree ex
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
 Plug 'ternjs/tern_for_vim',          { 'for': 'javascript', 'do': 'npm install', 'frozen': 1 }
 Plug 'nvie/vim-flake8',              { 'on': 'Flake8' }              " Flake8 plugin for Vim
+Plug 'Shougo/vimproc.vim',           { 'do' : 'make' }               " Interactive command execution
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
 Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
 " Syntax highlighting
@@ -112,7 +113,8 @@ let g:startify_bookmarks = [ '~/.vimrc' ]
 
 " Quickrun
 let g:quickrun_config = {}
-let g:quickrun_config._ = {'outputter': 'message'}
+let g:quickrun_config._ = { 'runner': 'vimproc' }
+let g:quickrun_config.python = { 'cmdopt': '-u' }
 
 " Ack
 nnoremap <leader>a :Ack<space>

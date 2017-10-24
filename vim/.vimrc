@@ -13,6 +13,7 @@ Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
+Plug 'sheerun/vim-polyglot'          " A solid language pack for Vim
 Plug 'thinca/vim-quickrun'           " Run commands quickly
 Plug 'tpope/vim-sensible'            " Defaults everyone can agree on
 Plug 'mhinz/vim-signify'             " Show a diff via Vim sign column

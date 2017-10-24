@@ -1,6 +1,3 @@
-set nocompatible                     " be iMproved
-filetype off                         " required
-
 " install vim-plug if not already installed
 source ~/.vim/utils/plug.vim
 
@@ -35,57 +32,42 @@ Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','javascript','python'],
 Plug (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
 call plug#end()
 
-" Enable color formattation
-syntax enable
+set nocompatible                     " be iMproved
+syntax enable                        " enable color formattation
+filetype plugin indent on            " enable indentation
 
-" Set bash as vim shell
-set shell=/bin/bash
+set autoindent                       " autoindent when starting new line
+set autoread                         " reload unchanged files automatically
+set backspace=indent,eol,start       " allow backspace in insert mode
+set cursorline                       " highlight current line
+set encoding=utf-8                   " force utf-8 encoding
+set ignorecase smartcase incsearch   " smart incremental case-insensitive search
+set lazyredraw                       " redraw only when we need to
+set nrformats-=octal                 " disable octal format for number processing
+set number                           " show line number
+set scrolloff=1                      " prevent cursor for reaching the first/last line
+set shell=/bin/bash                  " set bash as vim shell
+set showcmd                          " show command in bottom bar
+set smarttab                         " use 'shiftwidth' when using <Tab>
+set splitbelow splitright            " define where to open splits
+set t_Co=256                         " enable 256 colors
+set tabstop=4 shiftwidth=4 expandtab " indent using four spaces
+set title                            " set window title by default
+set wildmenu                         " visual autocomplete for command menu
+set hlsearch                         " highlight search results
+set list listchars=tab:»\ ,trail:·   " show hidden characters
 
-" Enable 256 colors
-set t_Co=256
-
-" show line number
-set number
-
-" define where to open splits
-set splitbelow
-set splitright
-
-" visual autocomplete for command menu
-set wildmenu
-
-" redraw only when we need to
-set lazyredraw
-
-" show command in bottom bar
-set showcmd
-
-" prevent cursor for reaching the first/last line
-set scrolloff=1
-
+" Set space as leader key
 let mapleader = "\<Space>"
 nnoremap <SPACE> <Nop>
 
 " It's 21st century.
 noremap j gj
 noremap k gk
-set backspace=indent,eol,start
 
-" hidden characters
-set list listchars=tab:»\ ,trail:·
-
-" highlight current line
-set cursorline
-
-" smart incremental search
-set ignorecase
-set smartcase
-set incsearch
-
-" highlight search
-set hlsearch
 " Clear search highlighting
 map <C-l> :nohlsearch<CR>
+
 " Keep search matches in the middle of the screen
 nnoremap n nzz
 nnoremap N Nzz
@@ -179,7 +161,6 @@ nnoremap P P`[v`]=
 " Fzf (CtrlP alternative)
 map <leader>p :FZF<CR>
 
-
 " Tagbar binding
 nmap <F8> :TagbarToggle<CR>
 
@@ -219,9 +200,6 @@ nnoremap <S-Tab> <C-W>W                                            " Previous Sp
 
 " toggle paste mode with F2
 set pastetoggle=<F2>
-
-" tabs
-set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab
 
 " use single folder for swap files
 set directory=~/.vim/swap,.

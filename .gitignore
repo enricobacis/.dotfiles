@@ -26,3 +26,9 @@
 
 # retry files
 /ansible/**/*.retry
+
+## svn
+
+/svn/.subversion/auth/
+/svn/.subversion/servers
+/svn/.subversion/README.txt

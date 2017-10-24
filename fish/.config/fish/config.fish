@@ -48,6 +48,10 @@ if test -d $HOME/.cargo/bin
   set -gx PATH $PATH $HOME/.cargo/bin
 end
 
+if test -d $HOME/.config/fish/bin
+  set -gx PATH $PATH $HOME/.config/fish/bin
+end
+
 # for local changes
 if test -e ~/.config/fish/local.fish
     source ~/.config/fish/local.fish

@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Discard any options, for example SVN attempts to set a bunch of GNU diff
+# options
+shift $(($# - 2))
+
+# Things you might want to change:
+# Git pipes into a pager by default. I overrode that with PAGER=cat
+# If color is enough, remove "=plain" to get rid of {+...+} and [-...-] marks.
+# See "man git-diff" for more options.
+
+exec git diff "$@"

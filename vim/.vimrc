@@ -137,9 +137,9 @@ endif
 nmap <leader>t :Pytest file<CR>
 
 " Theme
-silent! colorscheme molokai
 let g:molokai_original = 1
 let g:rehash256 = 1
+silent! colorscheme molokai
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %

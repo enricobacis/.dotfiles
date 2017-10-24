@@ -89,6 +89,10 @@ map <C-l> :nohlsearch<CR>
 nnoremap n nzz
 nnoremap N Nzz
 
+" Use Ctrl-S to save
+nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC>:w<CR>li
+
 " make Q like q (exit)
 command! Q q
 

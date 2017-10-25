@@ -143,8 +143,8 @@ nmap <Up> [e
 nmap <Down> ]e
 vmap <Left> <gv
 vmap <Right> >gv
-vmap <Up> [egv=gv
-vmap <Down> ]egv=gv
+vmap <Up> [egv
+vmap <Down> ]egv
 
 " Resize
 nnoremap <silent> <Leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
@@ -155,10 +155,6 @@ autocmd VimResized * :wincmd =
 
 " jj for esc
 inoremap jj <Esc>
-
-" Improve paste
-nnoremap p p`[v`]=
-nnoremap P P`[v`]=
 
 " Fzf (CtrlP alternative)
 map <leader>p :FZF<CR>

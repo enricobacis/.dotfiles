@@ -80,6 +80,9 @@ inoremap <C-s> <ESC>:w<CR>li
 " make Q like q (exit)
 command! Q q
 
+" Ale
+let g:ale_python_flake8_options = '--ignore=F403,F405'
+
 " Vim Commentary
 vmap <leader>c gc
 nmap <leader>c gcc

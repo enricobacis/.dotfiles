@@ -24,7 +24,6 @@ Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph you
 Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
-Plug 'ternjs/tern_for_vim',          { 'for': 'javascript', 'do': 'npm install', 'frozen': 1 }
 Plug 'nvie/vim-flake8',              { 'on': 'Flake8' }              " Flake8 plugin for Vim
 Plug 'Shougo/vimproc.vim',           { 'do' : 'make' }               " Interactive command execution
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator

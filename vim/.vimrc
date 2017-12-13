@@ -14,6 +14,7 @@ Plug 'sheerun/vim-polyglot'          " A solid language pack for Vim
 Plug 'thinca/vim-quickrun'           " Run commands quickly
 Plug 'tpope/vim-sensible'            " Defaults everyone can agree on
 Plug 'mhinz/vim-signify'             " Show a diff via Vim sign column
+Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
@@ -85,6 +86,11 @@ let g:ale_python_flake8_options = '--ignore=F403,F405'
 " Vim Commentary
 vmap <leader>c gc
 nmap <leader>c gcc
+
+" vim-easymotion
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
+nmap s <Plug>(easymotion-overwin-f2)
 
 " Nerd tree
 map <F4> :NERDTreeToggle<CR>

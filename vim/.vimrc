@@ -14,6 +14,7 @@ Plug 'sheerun/vim-polyglot'          " A solid language pack for Vim
 Plug 'thinca/vim-quickrun'           " Run commands quickly
 Plug 'tpope/vim-sensible'            " Defaults everyone can agree on
 Plug 'mhinz/vim-signify'             " Show a diff via Vim sign column
+Plug 'tpope/vim-sleuth'              " Heuristically set buffer options
 Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen

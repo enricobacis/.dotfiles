@@ -18,6 +18,7 @@ Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
+Plug 'maxbrunsfeld/vim-yankstack'    " Yank and delete things without worries
 Plug 'mileszs/ack.vim',              { 'on':  'Ack' }                " Vim plugin for ack/ag
 Plug 'junegunn/fzf',                 { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim',             { 'on':  'FZF' }                " fzf ❤️ vim
@@ -99,6 +100,11 @@ let NERDTreeIgnore =['\~$', '.DS_Store$']              " Temporary files
 let NERDTreeIgnore+=['\.png$', '\.pdf$', '\.eps$']     " Image files
 let NERDTreeIgnore+=['\.pyc$', '__pycache__$']         " Python compiled files
 let NERDTreeIgnore+=['\.o$', '\.so$', '\.a$']          " C compiled files
+
+" Yankstack
+let g:yankstack_yank_keys = ['c', 'C', 'd', 'D', 'S', 'x', 'X', 'y', 'Y']
+nmap <C-P> <Plug>yankstack_substitute_older_paste
+nmap <C-N> <Plug>yankstack_substitute_newer_paste
 
 " Gundo
 nnoremap <F5> :GundoToggle<CR>

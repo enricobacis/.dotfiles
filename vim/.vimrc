@@ -3,12 +3,13 @@ source ~/.vim/utils/plug.vim
 
 call plug#begin()
 Plug 'jiangmiao/auto-pairs'          " Insert brackets, quotes in pair
-Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
+Plug 'tpope/vim-commentary'          " Comment stuff out
+Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'sheerun/vim-polyglot'          " A solid language pack for Vim
@@ -16,7 +17,6 @@ Plug 'thinca/vim-quickrun'           " Run commands quickly
 Plug 'tpope/vim-sensible'            " Defaults everyone can agree on
 Plug 'mhinz/vim-signify'             " Show a diff via Vim sign column
 Plug 'tpope/vim-sleuth'              " Heuristically set buffer options
-Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'honza/vim-snippets'            " UltiSnips snippets
 Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings

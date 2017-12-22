@@ -2,6 +2,7 @@
 source ~/.vim/utils/plug.vim
 
 call plug#begin()
+Plug 'jiangmiao/auto-pairs'          " Insert brackets, quotes in pair
 Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'itchyny/lightline.vim'         " Light status/tabline

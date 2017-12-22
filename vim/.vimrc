@@ -3,10 +3,8 @@ source ~/.vim/utils/plug.vim
 
 call plug#begin()
 Plug 'jiangmiao/auto-pairs'          " Insert brackets, quotes in pair
-Plug 'othree/eregex.vim',            " Perl style regexp notation
 Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
-Plug 'majutsushi/tagbar'             " Display tags in a window
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
@@ -25,10 +23,7 @@ Plug 'mileszs/ack.vim',              { 'on':  'Ack' }                " Vim plugi
 Plug 'junegunn/fzf',                 { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim',             { 'on':  'FZF' }                " fzf ❤️ vim
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
-Plug 'vim-scripts/LanguageTool',     { 'on':  'LanguageToolCheck' }  " Grammar checker in vim
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
-Plug 'alfredodeza/pytest.vim',       { 'for': 'python' }             " Runs your UnitTests with py.test
-Plug 'nvie/vim-flake8',              { 'on': 'Flake8' }              " Flake8 plugin for Vim
 Plug 'Shougo/vimproc.vim',           { 'do' : 'make' }               " Interactive command execution
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
 Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
@@ -138,9 +133,6 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-" Pytest
-nmap <leader>t :Pytest file<CR>
-
 " Theme
 let g:molokai_original = 1
 let g:rehash256 = 1
@@ -175,13 +167,6 @@ inoremap jj <Esc>
 " Fzf (CtrlP alternative)
 map <leader>p :FZF<CR>
 
-" Tagbar binding
-nmap <F8> :TagbarToggle<CR>
-
-" Eregex
-nnoremap <leader>/ :call eregex#toggle()<CR>
-let g:eregex_default_enable = 0
-
 " ctags utilities
 set tags=./tags;/
 map <leader>q <C-]>
@@ -200,9 +185,6 @@ nnoremap <leader>g :YcmCompleter GoTo<CR>
 let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:UltiSnipsJumpForwardTrigger = "<C-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
-
-" LanguageTool
-let g:languagetool_jar='/opt/LanguageTool/languagetool-commandline.jar'
 
 " easy motions between splits
 nnoremap <leader>h <C-W>h

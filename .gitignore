@@ -6,6 +6,8 @@
 /vim/.vim/plugged
 # netrw directory history
 /vim/.vim/.netrwhist
+# vim spelling data
+/vim/.vim/spell
 
 ## fish
 

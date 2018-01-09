@@ -56,6 +56,8 @@ set wildmenu                         " visual autocomplete for command menu
 set hlsearch                         " highlight search results
 set list listchars=tab:»\ ,trail:·   " show hidden characters
 
+autocmd FileType latex,tex,md,markdown setlocal spell
+
 " Set space as leader key
 let mapleader = "\<Space>"
 nnoremap <SPACE> <Nop>

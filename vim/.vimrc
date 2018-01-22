@@ -57,8 +57,6 @@ set wildmenu                         " visual autocomplete for command menu
 set hlsearch                         " highlight search results
 set list listchars=tab:»\ ,trail:·   " show hidden characters
 
-autocmd FileType latex,tex,md,markdown setlocal spell
-
 " Set space as leader key
 let mapleader = "\<Space>"
 nnoremap <SPACE> <Nop>
@@ -212,3 +210,7 @@ set directory=~/.vim/swap,.
 " maintain undo history between sessions
 set undofile
 set undodir=~/.vim/undo,.
+
+" Spell checker
+autocmd FileType text,latex,tex,md,markdown setlocal spell
+highlight SpellBad cterm=underline ctermfg=red

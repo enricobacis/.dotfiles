@@ -212,5 +212,6 @@ set undofile
 set undodir=~/.vim/undo,.
 
 " Spell checker
-autocmd FileType text,latex,tex,md,markdown setlocal spell
-highlight SpellBad cterm=underline ctermfg=red
+autocmd FileType text,latex,tex,md,markdown
+  \ setlocal spell |
+  \ highlight SpellBad cterm=underline ctermfg=red

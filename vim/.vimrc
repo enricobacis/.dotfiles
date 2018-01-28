@@ -2,7 +2,6 @@
 source ~/.vim/utils/plug.vim
 
 call plug#begin()
-Plug 'jiangmiao/auto-pairs'          " Insert brackets, quotes in pair
 Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed

@@ -27,7 +27,7 @@ font pango:DejaVu Sans Mono 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec sakura
+bindsym $mod+Return exec $TERMINAL
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -175,7 +175,7 @@ bindsym $mod+Home exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers
 bindsym $mod+End  exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers XF86MonBrightnessUp
 
 # open browser
-bindsym $mod+b exec firefox
+bindsym $mod+b exec python2 -mwebbrowser -t "http://google.com"
 
 # screenlock
 bindsym mod4+l exec i3lock

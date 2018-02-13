@@ -1,0 +1,3 @@
+XKBLAYOUT="it,it"
+XKBVARIANT="us,"
+XKBOPTIONS="grp:alt_space_toggle,shift:both_capslock_cancel,caps:escape,grp:rwin_switch,grp_led:scroll,eurosign:5"

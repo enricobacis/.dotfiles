@@ -35,6 +35,7 @@ set nocompatible                     " be iMproved
 syntax enable                        " enable color formattation
 filetype plugin indent on            " enable indentation
 
+set mouse=a                          " allow scrolling with mouse
 set autoindent                       " autoindent when starting new line
 set autoread                         " reload unchanged files automatically
 set backspace=indent,eol,start       " allow backspace in insert mode

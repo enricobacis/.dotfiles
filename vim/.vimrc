@@ -25,8 +25,9 @@ Plug 'junegunn/fzf.vim',             { 'on':  'FZF' }                " fzf ‚ù§Ô∏
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'Shougo/vimproc.vim',           { 'do' : 'make' }               " Interactive command execution
+Plug 'artur-shaik/vim-javacomplete2',{ 'for' : ['java'] }            " Javacomplete plugin for vim
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
-Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
+Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','java','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
 " Syntax highlighting
 Plug (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
 call plug#end()
@@ -181,6 +182,7 @@ let g:ycm_extra_conf_vim_data = ['&filetype']
 let g:ycm_global_ycm_extra_conf = '~/.vim/utils/ycm_extra_conf.py'
 nnoremap <leader>f :YcmCompleter FixIt<CR>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " UltiSnip
 let g:UltiSnipsExpandTrigger = "<C-j>"

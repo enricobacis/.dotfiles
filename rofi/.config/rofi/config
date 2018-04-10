@@ -2,4 +2,4 @@ rofi.combi-modi:        drun,ssh,window
 rofi.matching:          fuzzy
 rofi.theme:             solarized_alternate
 rofi.font:              knack 12
-rofi.modi:              combi,run
+rofi.modi:              combi,run,clipboard:greenclip print

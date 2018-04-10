@@ -123,6 +123,8 @@ let g:signify_vcs_list = ['git', 'svn']
 " Startify
 let g:startify_custom_header = []
 let g:startify_bookmarks = [ '~/.vimrc' ]
+let g:startify_change_to_dir = 0
+let g:startify_change_to_vcs_root = 1
 
 " Quickrun
 let g:quickrun_config = {}

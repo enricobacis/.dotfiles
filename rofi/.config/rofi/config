@@ -1,0 +1,4 @@
+rofi.combi-modi:        drun,ssh,window
+rofi.theme:             solarized_alternate
+rofi.font:              knack 12
+rofi.modi:              combi

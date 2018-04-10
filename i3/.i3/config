@@ -177,12 +177,13 @@ bindsym $mod+b exec python2 -mwebbrowser -t "http://google.com"
 # screenlock
 bindsym mod4+l exec i3lock
 
+# clipboard manager
+bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard
+
 # quit menu
 bindsym XF86PowerOff exec --no-startup-id xdotool key --clearmodifiers super+q
 bindsym mod4+q exec "i3-nagbar -m 'What do you want to do?' -t warning -b 'shutdown' 'systemctl poweroff' -b 'reboot' 'systemctl reboot' -b 'suspend' 'systemctl suspend'"
 
 # startup applications
-exec --no-startup-id clipit
-
 exec --no-startup-id xsetroot -solid "#111111"
 exec --no-startup-id ~/.screenlayout/layout.sh

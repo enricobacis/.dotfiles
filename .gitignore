@@ -34,3 +34,6 @@
 /svn/.subversion/auth/
 /svn/.subversion/servers
 /svn/.subversion/README.txt
+
+## linux-fonts
+/linux-fonts/.local/share/fonts/.*

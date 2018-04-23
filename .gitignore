@@ -1,4 +1,4 @@
-## vim
+#################################### VIM #######################################
 
 # vim-plug script directory
 /vim/.vim/autoload
@@ -9,7 +9,8 @@
 # vim spelling data
 /vim/.vim/spell
 
-## fish
+
+#################################### FISH ######################################
 
 # universal variable daemon
 /fish/.config/fish/fishd.*
@@ -34,19 +35,25 @@
 !/fish/.config/fish/functions/ltmux.fish
 !/fish/.config/fish/functions/pew.fish
 
-## ansible
+
+################################### ANSIBLE ####################################
 
 # retry files
 /ansible/**/*.retry
 
-## svn
+
+##################################### SVN ######################################
 
 /svn/.subversion/auth/
 /svn/.subversion/servers
 /svn/.subversion/README.txt
 
-## linux-fonts
+
+################################# LINUX-FONTS ##################################
+
 /linux-fonts/.local/share/fonts/.*
 
-## karabiner
+
+################################## KARABINER ###################################
+
 /karabiner/.config/karabiner/assets/

@@ -47,3 +47,6 @@
 
 ## linux-fonts
 /linux-fonts/.local/share/fonts/.*
+
+## karabiner
+/karabiner/.config/karabiner/assets/

@@ -31,6 +31,12 @@ end
 # fisherman
 if not functions -q fisher; eval (curl -sfL https://git.io/fisher-install); end
 
+# fisherman/done
+set -g __done_min_cmd_duration 10000
+set -g __done_min_cmd_duration 10000
+set -g __done_exclude '(^git|^vim|^ssh)'
+
+
 # bobthefish
 set -g theme_show_exit_status yes
 

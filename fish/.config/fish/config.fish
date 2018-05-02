@@ -32,7 +32,6 @@ end
 if not functions -q fisher; eval (curl -sfL https://git.io/fisher-install); end
 
 # bobthefish
-set -g theme_display_user yes
 set -g theme_show_exit_status yes
 
 # bobthefish specific for the system (PEOPLE MAY WANT TO CHANGE THIS)

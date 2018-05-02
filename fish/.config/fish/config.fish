@@ -28,11 +28,8 @@ if begin status --is-login; and uname | grep -qi 'linux'; end
     end
 end
 
-# fundle
-if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
-fundle plugin 'tuvistavie/fish-fastdir'
-fundle plugin 'oh-my-fish/theme-bobthefish'
-fundle init
+# fisherman
+if not functions -q fisher; eval (curl -sfL https://git.io/fisher-install); end
 
 # bobthefish
 set -g theme_display_user yes

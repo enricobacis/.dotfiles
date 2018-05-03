@@ -23,6 +23,10 @@
 /fish/.config/fish/fundle
 # fish local settings
 /fish/.config/fish/local.fish
+# completions
+/fish/.config/fish/completions
+# conf.d
+/fish/.config/fish/conf.d
 # functions
 /fish/.config/fish/functions/*
 !/fish/.config/fish/functions/fish_user_key_bindings.fish

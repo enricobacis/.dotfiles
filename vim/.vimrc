@@ -82,7 +82,8 @@ inoremap <C-s> <ESC>:w<CR>li
 command! Q q
 
 " Ale
-let g:ale_python_flake8_options = '--ignore=F403,F405'
+let g:ale_fixers = ['yapf']
+nmap <leader>r :ALEFix<CR>
 
 " Airline
 let g:airline#extensions#whitespace#show_message = 0

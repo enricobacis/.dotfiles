@@ -2,13 +2,13 @@
 source ~/.vim/utils/plug.vim
 
 call plug#begin()
-Plug 'itchyny/lightline.vim'         " Light status/tabline
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
+Plug 'vim-airline/vim-airline'       " lean & mean status/tabline for vim
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'sheerun/vim-polyglot'          " A solid language pack for Vim
 Plug 'thinca/vim-quickrun'           " Run commands quickly
@@ -82,6 +82,15 @@ command! Q q
 
 " Ale
 let g:ale_python_flake8_options = '--ignore=F403,F405'
+
+" Airline
+let g:airline#extensions#whitespace#show_message = 0
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#tab_min_count = 2
+let g:airline#extensions#tabline#show_splits = 1
+let g:airline#extensions#ale#enabled = 1
 
 " Vim Commentary
 vmap <leader>c gc

@@ -56,6 +56,7 @@ set tabstop=4 shiftwidth=4 expandtab " indent using four spaces
 set title                            " set window title by default
 set wildmenu                         " visual autocomplete for command menu
 set hlsearch                         " highlight search results
+set noshowmode                       " don't show mode (there is airline)
 set list listchars=tab:»\ ,trail:·   " show hidden characters
 
 " Set space as leader key
@@ -117,14 +118,6 @@ nmap <C-N> <Plug>yankstack_substitute_newer_paste
 " Gundo
 nnoremap <F5> :GundoToggle<CR>
 let g:gundo_close_on_revert = 1
-
-" Statusline and Tabline
-set laststatus=2
-set showtabline=2
-set noshowmode
-
-" Fugitive
-autocmd User Fugitive SignifyRefresh
 
 " Signify
 let g:signify_vcs_list = ['git', 'svn']

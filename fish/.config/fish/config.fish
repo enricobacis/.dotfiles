@@ -34,7 +34,7 @@ if not functions -q fisher; eval (curl -sfL https://git.io/fisher-install); end
 # fisherman/done
 set -g __done_min_cmd_duration 10000
 set -g __done_min_cmd_duration 10000
-set -g __done_exclude '(^git|^vim|^ssh)'
+set -g __done_exclude '(^git|^vim|^ssh|^i?python[23]?$)'
 
 
 # bobthefish

@@ -84,6 +84,7 @@ command! Q q
 " Ale
 let g:ale_fixers = ['yapf']
 nmap <leader>r :ALEFix<CR>
+nmap <leader>e <Plug>(ale_next_wrap)
 
 " Airline
 let g:airline#extensions#whitespace#show_message = 0

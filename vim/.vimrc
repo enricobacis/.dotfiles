@@ -97,8 +97,8 @@ let g:airline#extensions#tabline#show_splits = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#ale#error_symbol = "\uf05e "
 let g:airline#extensions#ale#warning_symbol = "\uf071 "
-let g:airline#extensions#ale#show_line_numbers = 0
-let g:airline#extensions#ale#open_lnum_symbol = ' (line '
+let g:airline#extensions#ale#show_line_numbers = 1
+let g:airline#extensions#ale#open_lnum_symbol = ' (@'
 
 " Vim Commentary
 vmap <leader>c gc

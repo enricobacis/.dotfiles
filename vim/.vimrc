@@ -2,6 +2,7 @@
 source ~/.vim/utils/plug.vim
 
 call plug#begin()
+Plug 'EinfachToll/DidYouMean'        " Asks for the right file to open
 Plug 'junegunn/fzf.vim'              " fzf ❤️ vim
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed

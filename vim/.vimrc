@@ -190,6 +190,8 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_goto_buffer_command = 'new-or-existing-tab'
 let g:ycm_extra_conf_vim_data = ['&filetype']
 let g:ycm_global_ycm_extra_conf = '~/.vim/utils/ycm_extra_conf.py'
+" use the first python in PATH (allow virtualenv)
+let g:ycm_python_binary_path = 'python'
 nnoremap <leader>f :YcmCompleter FixIt<CR>
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 autocmd FileType java setlocal omnifunc=javacomplete#Complete

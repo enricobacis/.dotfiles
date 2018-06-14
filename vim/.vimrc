@@ -107,7 +107,7 @@ nmap <leader>c gcc
 " vim-easymotion
 let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
-nmap <leader>s <Plug>(easymotion-overwin-f2)
+nmap <leader><space> <Plug>(easymotion-overwin-f2)
 
 " Nerd tree
 map <F4> :NERDTreeToggle<CR>

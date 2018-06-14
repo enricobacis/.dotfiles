@@ -7,10 +7,11 @@ Plug 'junegunn/fzf.vim'              " fzf ❤️ vim
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
+Plug 'vim-airline/vim-airline'       " lean & mean status/tabline for vim
 Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
-Plug 'vim-airline/vim-airline'       " lean & mean status/tabline for vim
+Plug 'rhysd/vim-grammarous'          " A powerful grammar checker using LanguageTool
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection
 Plug 'sheerun/vim-polyglot'          " A solid language pack for Vim
 Plug 'thinca/vim-quickrun'           " Run commands quickly
@@ -103,6 +104,10 @@ let g:airline#extensions#ale#open_lnum_symbol = ' (@'
 " Vim Commentary
 vmap <leader>c gc
 nmap <leader>c gcc
+
+" Vim Grammarous
+let g:grammarous#use_vim_spelllang = 1
+nmap <leader>s :GrammarousCheck<CR>
 
 " vim-easymotion
 let g:EasyMotion_do_mapping = 0

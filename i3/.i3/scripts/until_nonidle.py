@@ -23,6 +23,7 @@ def kill_all(pid):
 def main():
     last_idletime = 0
     p = subprocess.Popen(sys.argv[1:])
+    retval = 1
 
     while p.poll() is None:
         # process is alive
@@ -30,6 +31,7 @@ def main():
         current_idletime = get_idletime()
 
         if current_idletime < last_idletime:
+            retval = 0
             kill_all(p.pid)
             p.wait()
             break
@@ -37,6 +39,8 @@ def main():
         last_idletime = current_idletime
         time.sleep(POLL_MILLISECONDS / 1000.)
 
+    return retval
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

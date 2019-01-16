@@ -199,4 +199,7 @@ bindsym mod4+q exec "i3-nagbar -m 'What do you want to do?' -t warning -b 'shutd
 # startup applications
 exec --no-startup-id xsetroot -solid "#111111"
 exec --no-startup-id ~/.screenlayout/layout.sh
-exec --no-startup-id xautolock -notify 5 -notifier "~/.i3/scripts/lock-notifier.sh" -time 5 -locker "~/.i3/scripts/locker.sh"
+
+# auto lock
+exec --no-startup-id xset s 300
+exec --no-startup-id xautolock -notify 5 -notifier "~/.i3/scripts/until_nonidle.py ~/.i3/scripts/lock-notifier.sh" -time 5 -locker "~/.i3/scripts/locker.sh"

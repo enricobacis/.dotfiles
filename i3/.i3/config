@@ -186,7 +186,8 @@ bindsym $mod+End  exec --no-startup-id sleep 0.1 && xdotool key --clearmodifiers
 bindsym $mod+b exec python2 -mwebbrowser -t "http://google.com"
 
 # screenlock
-bindsym mod4+l exec i3lock
+bindsym mod4+l exec "~/.i3/scripts/locker.sh"
+bindsym Control+mod1+l exec "~/.i3/scripts/locker.sh"
 
 # clipboard manager
 bindsym $mod+v exec rofi -modi "clipboard:greenclip print" -show clipboard
@@ -198,3 +199,4 @@ bindsym mod4+q exec "i3-nagbar -m 'What do you want to do?' -t warning -b 'shutd
 # startup applications
 exec --no-startup-id xsetroot -solid "#111111"
 exec --no-startup-id ~/.screenlayout/layout.sh
+exec --no-startup-id xautolock -notify 5 -notifier "~/.i3/scripts/lock-notifier.sh" -time 5 -locker "~/.i3/scripts/locker.sh"

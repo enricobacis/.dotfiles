@@ -22,6 +22,7 @@ Plug 'mhinz/vim-startify'            " A fancy start screen
 Plug 'tpope/vim-unimpaired'          " Pairs of handy bracket mappings
 Plug 'maxbrunsfeld/vim-yankstack'    " Yank and delete things without worries
 Plug 'mileszs/ack.vim',              { 'on':  'Ack' }                " Vim plugin for ack/ag
+Plug 'mattn/emmet-vim',              { 'for': ['html'] }             " Crazy fast html coding
 Plug 'junegunn/fzf',                 { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
@@ -233,3 +234,7 @@ set undodir=~/.vim/undo,.
 autocmd FileType text,latex,tex,md,markdown
   \ setlocal spell |
   \ highlight SpellBad cterm=underline ctermfg=red
+
+" emmet expansion for html
+autocmd FileType html
+  \ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")

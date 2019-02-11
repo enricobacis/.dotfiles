@@ -142,7 +142,8 @@ let g:startify_change_to_vcs_root = 1
 
 " Quickrun
 let g:quickrun_config = {}
-let g:quickrun_config._ = { 'runner': 'vimproc', 'hook/shebang/enable' : 1, }
+let g:quickrun_config._ = { 'hook/shebang/enable': 1, 'runner': 'vimproc', 'runner/vimproc/updatetime': 100 }
+let g:quickrun_config.python = { 'cmdopt': '-u' }
 
 " Ack
 nnoremap <leader>a :Ack<space>

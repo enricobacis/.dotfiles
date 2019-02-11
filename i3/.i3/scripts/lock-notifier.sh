@@ -6,5 +6,5 @@ echo 'locking soon' | osd_cat \
     --align=center \
     --color=red \
     --outline=8 \
-    --delay=5 \
+    --delay=10 \
     --font='-*-*-bold-*-*-*-140-*-*-*-*-*-*-*'

@@ -24,3 +24,5 @@
 # correct typos
 [help]
 	autocorrect = 1
+[pull]
+	rebase = true

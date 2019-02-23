@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'       " lean & mean status/tabline for vim
 Plug 'enricobacis/vim-airline-clock' " Clock for vim-airline
 Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
+Plug 'Olical/vim-enmasse'            " Edit every line in a quickfix list
 Plug 'tpope/vim-fugitive'            " awesome git wrapper
 Plug 'rhysd/vim-grammarous'          " A powerful grammar checker using LanguageTool
 Plug 'terryma/vim-multiple-cursors'  " Sublime Text style multiple selection

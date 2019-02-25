@@ -1,11 +1,11 @@
 # Show comments at right of disassembly
-e asm.cmtright=true
+e asm.cmt.right = true
 
 # Shows pseudocode in disassembly. Eg mov eax, str.ok = > eax = str.ok
-#e asm.pseudo=true
+# e asm.pseudo = true
 
 # Use UTF-8 to show cool arrows that do not look like crap :)
-e scr.utf8=true
+e scr.utf8 = true
 
 e asm.describe = true
 

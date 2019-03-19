@@ -22,6 +22,7 @@
 	browse = open
 	ignored = status --ignored
 	clean-ignored = clean -dfX
+	latexdiff = !"~/.config/git/git-latexdiff"
 
 # correct typos
 [help]

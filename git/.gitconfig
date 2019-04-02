@@ -22,7 +22,7 @@
 	browse = open
 	ignored = status --ignored
 	clean-ignored = clean -dfX
-	latexdiff = !"~/.config/git/git-latexdiff"
+	latexdiff = !"~/.config/git/git-latexdiff --ignore-makefile --subtree --bibtex --ignore-latex-errors --view -o $PWD/diff.pdf"
 
 # correct typos
 [help]

@@ -728,7 +728,7 @@ if test $latex = 1; then
     ps2pdf "$mainbase".ps
 fi
 
-pdffile="$builddir/$mainbase".pdf
+pdffile="$mainbase".pdf
 if test ! -r "$pdffile" ; then
     echo "No PDF file generated."
     compile_error=1

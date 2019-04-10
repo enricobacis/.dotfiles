@@ -44,6 +44,7 @@ set -g theme_show_exit_status yes
 set -g default_user enrico
 set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
+set -g fish_color_search_match --background=purple
 
 # rust
 if test -d $HOME/.cargo/bin

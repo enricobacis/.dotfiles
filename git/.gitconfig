@@ -18,6 +18,7 @@
 	tree = tree1
 	s = status -s
 	st = status
+	squash-all = !"message=`git log --format=%B --max-parents=0 HEAD`; git reset `git commit-tree 'HEAD^{tree}' -m \"$message\"`"
 	open = !"if [ `uname -s` = \"Darwin\" ]; then browser=open; else browser=xdg-open; fi; $browser `git remote -v | awk '/fetch/{print $2}' | sed -re 's#(git@|git://)#http://#' -e 's@com:@com/@'` >/dev/null 2>&1 &"
 	browse = open
 	ignored = status --ignored

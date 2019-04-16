@@ -6,6 +6,9 @@ then
     $TERMINAL -x "bash -c $0"
 else
     file=$(fzf)
-    nohup xdg-open $file >/dev/null 2>&1 &
-    sleep 0.1
+    if [[ ! -z ${file+x} ]]
+    then
+        nohup xdg-open $file >/dev/null 2>&1 &
+        sleep 0.1
+    fi
 fi

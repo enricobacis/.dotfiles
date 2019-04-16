@@ -8,7 +8,7 @@ else
     file=$(fzf)
     if [[ ! -z ${file+x} ]]
     then
-        nohup xdg-open $file >/dev/null 2>&1 &
+        nohup xdg-open "$file" >/dev/null 2>&1 &
         sleep 0.1
     fi
 fi

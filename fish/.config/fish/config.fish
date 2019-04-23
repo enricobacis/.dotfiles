@@ -62,6 +62,11 @@ if test -d $HOME/.config/fish/bin
   set -gx PATH $PATH $HOME/.config/fish/bin
 end
 
+# local bins
+if test -d $HOME/.local/bin
+  set -gx PATH $PATH $HOME/.local/bin
+end
+
 # for local changes
 if test -e ~/.config/fish/local.fish
     source ~/.config/fish/local.fish

@@ -39,6 +39,7 @@ set -g __done_exclude '(^git|^vim|^ssh|^i?python[23]?$)'
 
 # bobthefish
 set -g theme_show_exit_status yes
+set -g theme_date_format "+%a %d %b %Y %T %Z"
 
 # bobthefish specific for the system (PEOPLE MAY WANT TO CHANGE THIS)
 set -g default_user enrico

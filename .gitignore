@@ -18,6 +18,8 @@
 
 # universal variable daemon
 /fish/.config/fish/fishd.*
+# fish variables
+/fish/.config/fish/fish_variables
 # fish history
 /fish/.config/fish/fish_history
 # fundle functions

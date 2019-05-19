@@ -53,9 +53,11 @@ if test -d $HOME/.cargo/bin
 end
 
 # ruby gems
-set -l GEM_BIN_PATH (ruby -e 'print Gem.user_dir')/bin
-if test -d $GEM_BIN_PATH
-  set -gx PATH $PATH $GEM_BIN_PATH
+if type -q ruby
+  set -l GEM_BIN_PATH (ruby -e 'print Gem.user_dir')/bin
+  if test -d $GEM_BIN_PATH
+    set -gx PATH $PATH $GEM_BIN_PATH
+  end
 end
 
 # fish bins

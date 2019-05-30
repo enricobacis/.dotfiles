@@ -3,6 +3,9 @@ set -gx EDITOR (type -q vim; and echo vim; or echo vi)
 set -gx VISUAL $EDITOR
 alias vi $EDITOR
 
+# cups
+set -gx CUPS_USER 'x'
+
 # fzf
 if type -q fzf
   if type -q rg; set -gx FZF_DEFAULT_COMMAND 'rg --files'

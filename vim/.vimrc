@@ -7,6 +7,7 @@ Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'vim-airline/vim-airline'       " lean & mean status/tabline for vim
+Plug 'enricobacis/vim-airline-clock' " Clock for vim-airline
 Plug 'tpope/vim-commentary'          " Comment stuff out
 Plug 'easymotion/vim-easymotion'     " Vim motions on speed!
 Plug 'tpope/vim-fugitive'            " awesome git wrapper

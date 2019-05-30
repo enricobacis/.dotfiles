@@ -18,8 +18,13 @@ function bind_dollar
 end
 
 function fish_user_key_bindings
+
   bind ! bind_bang
   bind '$' bind_dollar
+
+  if type -q fzf_key_bindings
+    fzf_key_bindings
+  end
+
 end
 
-if type -q fzf_key_bindings; fzf_key_bindings; end

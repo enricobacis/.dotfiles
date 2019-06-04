@@ -5,6 +5,21 @@ function clean-pdf --argument filename --description "Converts text pdfs into im
 		return 1
 	end
 
+	if type -q convert;
+		echo "imagemagick (convert) not found"
+		return 1
+	end
+
+	if type -q exiftool;
+		echo "exiftool not found"
+		return 1
+	end
+
+	if type -q qpdf;
+		echo "qpdf not found"
+		return 1
+	end
+
 	if test -d $filename
 		for f in $filename/*.pdf
 			echo "Cleaning $f ..."

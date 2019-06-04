@@ -6,19 +6,27 @@ function clean-pdf --argument filename --description "Converts text pdfs into im
 	end
 
 	if not type -q convert
+		set_color red
 		echo "Error: convert (imagemagick) not found"
+		set_color normal
 		return 1
+
 	else if not type -q exiftool
+		set_color red
 		echo "Error: exiftool not found"
+		set_color normal
 		return 1
+
 	else if not type -q qpdf
+		set_color red
 		echo "Error: qpdf not found"
+		set_color normal
 		return 1
 	end
 
 	if test -d $filename
 		for f in $filename/*.pdf
-			echo "Cleaning $f ..."
+			echo "[*] Cleaning $f ..."
 			clean-pdf $f
 		end
 
@@ -32,15 +40,21 @@ function clean-pdf --argument filename --description "Converts text pdfs into im
 		mv "$cleanname.2" "$cleanname"
 
 		if test $status -eq 0
-			echo -e "\n[$cleanname created]"
+			set_color green
+			echo -e "\n[*] $cleanname created"
+			set_color normal
 			return 0
 		else
-			echo -e "\n[Error creating file $cleanname]"
+			set_color red
+			echo -e "\n[*] Error creating file $cleanname"
+			set_color normal
 			return 1
 		end
 
 	else
+		set_color red
 		echo "Error: Unrecognized file $filename"
+		set_color normal
 		return 1
 	end
 

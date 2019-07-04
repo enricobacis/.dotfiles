@@ -1,5 +1,4 @@
-function clean-pdf --argument filename --description "Converts text pdfs into images pdfs and strips metadata"
-
+function clean-pdf --description 'Converts text pdfs into images pdfs and strips metadata' --argument filename
 	if test -z $filename; or not test -e $filename
 		echo "Usage: `clean-pdf filename.pdf` or `clean-pdf dirname`"
 		return 1
@@ -31,8 +30,9 @@ function clean-pdf --argument filename --description "Converts text pdfs into im
 		end
 
 	else if test -f $filename
-		set -l cleanname "clean/$filename"
-		mkdir -p clean; and \
+		set -l cleandir (dirname $filename)/clean
+		set -l cleanname $cleandir/(basename $filename)
+		mkdir -p $cleandir; and \
 		convert -density 200 "$filename" "$cleanname"; and \
 		exiftool -ignoreMinorErrors -all:all= "$cleanname"; and \
 		exiftool -delete_original! "$cleanname"; and \

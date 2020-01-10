@@ -30,6 +30,7 @@ Plug 'junegunn/fzf',                 { 'dir': '~/.fzf', 'do': './install --all' 
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
 Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
 Plug 'Shougo/vimproc.vim',           { 'do' : 'make' }               " Interactive command execution
+Plug 'heavenshell/vim-jsdoc',        { 'for': ['javascript'] }       " Generate JsDoc
 Plug 'artur-shaik/vim-javacomplete2',{ 'for' : ['java'] }            " Javacomplete plugin for vim
 Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouCompleteMe generator
 Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','java','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
@@ -213,6 +214,13 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 " LineDiff
 vnoremap <F1> :Linediff<CR>
 autocmd User LinediffBufferReady nnoremap <buffer> q :LinediffReset<CR>
+
+" JsDoc
+let g:jsdoc_allow_input_prompt = 1
+let g:jsdoc_input_description = 1
+let g:jsdoc_additional_description = 1
+let g:jsdoc_tags = {} | let g:jsdoc_tags['returns'] = 'return'
+nmap <silent> <leader>d <Plug>(jsdoc)
 
 " easy motions between splits
 nnoremap <leader>h <C-W>h

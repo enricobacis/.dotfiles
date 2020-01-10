@@ -148,7 +148,11 @@ nnoremap <F5> :GundoToggle<CR>
 let g:gundo_close_on_revert = 1
 
 " Signify
-let g:signify_vcs_list = ['git', 'svn']
+let g:signify_vcs_list = ['git', 'hg', 'perforce', 'svn']
+let g:signify_vcs_cmds = {
+    \ 'perforce': 'p4 info >& /dev/null && env G4MULTIDIFF=0 P4DIFF=%d p4 diff -dU0 %f',
+    \ 'hg': 'hg diff -r .^ --color never --config defaults.diff= --nodates -U0 -- %f'
+    \ }
 
 " Startify
 let g:startify_custom_header = []

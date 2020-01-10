@@ -36,11 +36,12 @@
 /fish/.config/fish/conf.d
 # functions
 /fish/.config/fish/functions/*
+!/fish/.config/fish/functions/clean-pdf.fish
 !/fish/.config/fish/functions/fish_user_key_bindings.fish
 !/fish/.config/fish/functions/fuck.fish
 !/fish/.config/fish/functions/ltmux.fish
+!/fish/.config/fish/functions/n.fish
 !/fish/.config/fish/functions/pew.fish
-!/fish/.config/fish/functions/clean-pdf.fish
 
 
 ################################### ANSIBLE ####################################

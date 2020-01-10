@@ -130,11 +130,13 @@ nmap <leader><space> <Plug>(easymotion-overwin-f2)
 
 " Nerd tree
 map <F4> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore =['\~$', '.DS_Store$']              " Temporary files
 let NERDTreeIgnore+=['\.png$', '\.pdf$', '\.eps$']     " Image files
 let NERDTreeIgnore+=['\.pyc$', '__pycache__$']         " Python compiled files
 let NERDTreeIgnore+=['\.o$', '\.so$', '\.a$']          " C compiled files
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Yankstack
 let g:yankstack_yank_keys = ['c', 'C', 'd', 'D', 'S', 'x', 'X', 'y', 'Y']

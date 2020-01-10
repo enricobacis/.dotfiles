@@ -49,6 +49,8 @@ set backspace=indent,eol,start       " allow backspace in insert mode
 set cursorline                       " highlight current line
 set encoding=utf-8                   " force utf-8 encoding
 set ignorecase smartcase incsearch   " smart incremental case-insensitive search
+set ttimeoutlen=100                  " how much to wait for key combinations
+set ttyfast                          " fast scrolling
 set lazyredraw                       " redraw only when we need to
 set nrformats-=octal                 " disable octal format for number processing
 set number                           " show line number
@@ -64,6 +66,8 @@ set wildmenu                         " visual autocomplete for command menu
 set hlsearch                         " highlight search results
 set noshowmode                       " don't show mode (there is airline)
 set list listchars=tab:»\ ,trail:·   " show hidden characters
+
+set spell spelllang=en_us
 
 " Set space as leader key
 let mapleader = "\<Space>"
@@ -189,7 +193,7 @@ inoremap jj <Esc>
 " Fzf (CtrlP alternative)
 map <leader>p :FZF<CR>
 
-" ctags utilities
+" Ctags
 set tags=./tags;/
 map <leader>q <C-]>
 
@@ -214,6 +218,10 @@ let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
 " LineDiff
 vnoremap <F1> :Linediff<CR>
 autocmd User LinediffBufferReady nnoremap <buffer> q :LinediffReset<CR>
+
+" Emmet
+autocmd FileType html
+  \ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " JsDoc
 let g:jsdoc_allow_input_prompt = 1
@@ -250,7 +258,3 @@ set undodir=~/.vim/undo,.
 autocmd FileType text,latex,tex,md,markdown
   \ setlocal spell |
   \ highlight SpellBad cterm=underline ctermfg=red
-
-" emmet expansion for html
-autocmd FileType html
-  \ imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")

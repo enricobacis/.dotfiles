@@ -3,6 +3,7 @@ source ~/.vim/utils/plug.vim
 
 call plug#begin()
 Plug 'junegunn/fzf.vim'              " fzf ❤️ vim
+Plug 'AndrewRadev/linediff.vim'      " Perform diffs on blocks of code
 Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
@@ -208,6 +209,10 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 let g:UltiSnipsExpandTrigger = "<C-j>"
 let g:UltiSnipsJumpForwardTrigger = "<C-j>"
 let g:UltiSnipsJumpBackwardTrigger = "<C-k>"
+
+" LineDiff
+vnoremap <F1> :Linediff<CR>
+autocmd User LinediffBufferReady nnoremap <buffer> q :LinediffReset<CR>
 
 " easy motions between splits
 nnoremap <leader>h <C-W>h

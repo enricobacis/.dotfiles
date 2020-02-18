@@ -57,10 +57,8 @@ end
 
 # ruby gems
 if type -q ruby
-  set -l GEM_BIN_PATH (ruby -e 'print Gem.user_dir')/bin
-  if test -d $GEM_BIN_PATH
-    set -gx PATH $PATH $GEM_BIN_PATH
-  end
+  set -gx GEM_HOME $HOME/.gems
+  set -gx PATH $PATH $GEM_HOME/bin
 end
 
 # fish bins
@@ -76,4 +74,15 @@ end
 # for local changes
 if test -e ~/.config/fish/local.fish
     source ~/.config/fish/local.fish
+end
+
+# miniconda
+set -l MINICONDA3_BIN $HOME/.miniconda3/bin
+if test $MINICONDA3_BIN
+# set -gx PATH $PATH $MINICONDA3_BIN
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+eval /home/enrico/.miniconda3/bin/conda "shell.fish" "hook" $argv | source
+# <<< conda initialize <<<
+conda config --set auto_activate_base false
 end

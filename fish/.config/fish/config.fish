@@ -78,7 +78,7 @@ end
 
 # miniconda
 set -l MINICONDA3_BIN $HOME/.miniconda3/bin
-if test $MINICONDA3_BIN
+if test -f $MINICONDA3_BIN
 # set -gx PATH $PATH $MINICONDA3_BIN
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

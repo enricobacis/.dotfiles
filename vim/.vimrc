@@ -4,7 +4,6 @@ source ~/.vim/utils/plug.vim
 call plug#begin()
 Plug 'junegunn/fzf.vim'              " fzf ❤️ vim
 Plug 'AndrewRadev/linediff.vim'      " Perform diffs on blocks of code
-Plug 'tomasr/molokai'                " Molokai color scheme
 Plug 'enricobacis/paste.vim'         " Paste from clipboard at full speed
 Plug 'SirVer/ultisnips'              " The ultimate snippet solution
 Plug 'vim-airline/vim-airline'       " lean & mean status/tabline for vim
@@ -36,6 +35,9 @@ Plug 'rdnetto/YCM-Generator',        { 'branch': 'stable' }          " YouComple
 Plug 'Valloric/YouCompleteMe',       { 'for': ['c','cpp','java','javascript','python'], 'do': './install.py --clang-completer', 'frozen': 1 }
 " Syntax highlighting
 Plug (v:version < 800 ? 'scrooloose/syntastic' : 'w0rp/ale')
+" Color schemes
+Plug 'tomasr/molokai'                   " Molokai
+Plug 'altercation/vim-colors-solarized' " Solarized
 call plug#end()
 
 set nocompatible                     " be iMproved
@@ -67,7 +69,20 @@ set hlsearch                         " highlight search results
 set noshowmode                       " don't show mode (there is airline)
 set list listchars=tab:»\ ,trail:·   " show hidden characters
 
-set spell spelllang=en_us
+
+" Theme
+if &diff
+  syntax off
+  set background=light
+  let g:solarized_diffmode="high"
+  let g:solarized_termcolors=256
+  silent! colorscheme solarized
+else
+  let g:molokai_original=1
+  let g:rehash256=1
+  silent! colorscheme molokai
+  set spell spelllang=en_us
+endif
 
 " Set space as leader key
 let mapleader = "\<Space>"
@@ -170,11 +185,6 @@ nnoremap <leader>a :Ack<space>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-
-" Theme
-let g:molokai_original = 1
-let g:rehash256 = 1
-silent! colorscheme molokai
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %

@@ -114,6 +114,7 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 let g:ale_use_global_executables = 1
+let g:ale_echo_msg_format = '%linter% says %s'
 nmap <leader>x :ALEFix<CR>
 nmap <leader>e <Plug>(ale_next_wrap)
 

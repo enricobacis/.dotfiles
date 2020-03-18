@@ -18,7 +18,7 @@
 	s = status -s
 	st = status
 	squash-all = !"message=`git log --format=%B --max-parents=0 HEAD`; git reset `git commit-tree 'HEAD^{tree}' -m \"$message\"`"
-	open = !"if [ `uname -s` = \"Darwin\" ]; then browser=open; else browser=xdg-open; fi; page=`git remote -v | awk '/fetch/{print $2}' | sed -re 's#(git@|git://)#http://#' -e 's@com:@com/@'`; echo \"[*] Opening page $page\"; $browser $page >/dev/null 2>&1 &"
+	open = !"if [ `uname -s` = \"Darwin\" ]; then browser=open; sed=gsed; else browser=xdg-open; sed=sed; fi; page=`git remote -v | awk '/fetch/{print $2}' | $sed -re 's#(git@|git://)#http://#' -e 's@com:@com/@'`; echo \"[*] Opening page $page\"; $browser $page >/dev/null 2>&1 &"
 	browse = !"git open"
 	ignored = status --ignored
 	clean-ignored = clean -dfX

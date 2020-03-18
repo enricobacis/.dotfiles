@@ -55,6 +55,12 @@ if test -d $HOME/.cargo/bin
   set -gx PATH $PATH $HOME/.cargo/bin
 end
 
+# go
+if type -q go
+  set -gx GOPATH $HOME/.go
+  set -gx PATH $PATH $HOME/.go/bin
+end
+
 # ruby gems
 if type -q ruby
   set -gx GEM_HOME $HOME/.gems

@@ -27,7 +27,8 @@ Plug 'mileszs/ack.vim',              { 'on':  'Ack' }                " Vim plugi
 Plug 'mattn/emmet-vim',              { 'for': ['html'] }             " Crazy fast html coding
 Plug 'junegunn/fzf',                 { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'sjl/gundo.vim',                { 'on':  'GundoToggle' }        " Graph your Vim undo tree in style
-Plug 'scrooloose/nerdtree',          { 'on':  'NERDTreeToggle' }     " A tree explorer plugin
+Plug 'scrooloose/nerdtree'           " A tree explorer plugin
+Plug 'jistr/vim-nerdtree-tabs'       " Tabs-aware NERDTree
 Plug 'Shougo/vimproc.vim',           { 'do' : 'make' }               " Interactive command execution
 Plug 'heavenshell/vim-jsdoc',        { 'for': ['javascript'] }       " Generate JsDoc
 Plug 'artur-shaik/vim-javacomplete2',{ 'for' : ['java'] }            " Javacomplete plugin for vim
@@ -145,14 +146,14 @@ let g:EasyMotion_smartcase = 1
 nmap <leader><space> <Plug>(easymotion-overwin-f2)
 
 " Nerd tree
-map <F4> :NERDTreeToggle<CR>
+map <F4> <plug>NERDTreeTabsToggle<CR>
 let NERDTreeShowBookmarks = 1
-let NERDTreeQuitOnOpen = 1
+" let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore =['\~$', '.DS_Store$']              " Temporary files
 let NERDTreeIgnore+=['\.png$', '\.pdf$', '\.eps$']     " Image files
 let NERDTreeIgnore+=['\.pyc$', '__pycache__$']         " Python compiled files
 let NERDTreeIgnore+=['\.o$', '\.so$', '\.a$']          " C compiled files
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Yankstack
 let g:yankstack_yank_keys = ['c', 'C', 'd', 'D', 'S', 'x', 'X', 'y', 'Y']

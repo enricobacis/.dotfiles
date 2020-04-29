@@ -37,6 +37,7 @@
 # functions
 /fish/.config/fish/functions/*
 !/fish/.config/fish/functions/clean-pdf.fish
+!/fish/.config/fish/functions/scan.fish
 !/fish/.config/fish/functions/fish_user_key_bindings.fish
 !/fish/.config/fish/functions/fuck.fish
 !/fish/.config/fish/functions/ltmux.fish
